@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
-class Chat4 extends CI_Controller
+class chat extends CI_Controller
 {
     public function __construct()
     {
@@ -19,7 +19,7 @@ class Chat4 extends CI_Controller
     // Ambil data pengguna dari tabel users
 		$user = $this->m_account->getUserById($user_id);        
 		$data = [
-			'active_controller' => 'chat4',
+			'active_controller' => 'chat',
 			'chats' => $this->chatModel->getChatHistoryByUser('chats', $user_id), // Gunakan tabel 'chats2',
 			'user' => $user
 		];		
@@ -212,6 +212,6 @@ class Chat4 extends CI_Controller
     public function clear()
     {
         $this->chatModel->clearChatHistory('chats');
-        redirect('chat4'); // redirect back to chat page
+        redirect('chat'); // redirect back to chat page
     }
 }

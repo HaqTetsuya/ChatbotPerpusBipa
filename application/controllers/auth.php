@@ -36,7 +36,7 @@ class Auth extends CI_Controller
                     );
                     $this->session->set_userdata($data_session);
 
-                    redirect('chat4');
+                    redirect('welcome');
                 } else {
                     // Wrong password
                     redirect('auth/login?alert=password_salah');
@@ -92,7 +92,7 @@ class Auth extends CI_Controller
         );
         $this->session->set_userdata($data_session);
 
-        redirect('chat4');
+        redirect('welcome');
     }
 	function logout(){
         $this->session->sess_destroy();
