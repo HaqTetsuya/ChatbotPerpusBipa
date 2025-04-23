@@ -59,7 +59,7 @@ Before running the chatbot, you need to train the IndoBERT model. Use the provid
    - Preprocess the data.
    - Train and save the model.
 
-3. Download the trained model and place it in the appropriate directory in the project: ``/py/indobert_intent_model/``.
+3. Download the trained model and place it in the appropriate directory in the project: ``/py/model/``.
 
 ---
 
