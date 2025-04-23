@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 # Global variables for intent classification
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_SAVE_PATH = os.path.join(BASE_DIR, "indobert_intent_model")
+MODEL_SAVE_PATH = os.path.join(BASE_DIR, "model")
 intent_model = None
 intent_tokenizer = None
 intent_classes = None
