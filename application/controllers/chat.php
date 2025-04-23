@@ -5,6 +5,7 @@ class chat extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+		$this->load->helper('responses');
         $this->load->model('Chat_model', 'chatModel'); // Memuat model Chat_model
 		$this->load->model('m_account');
 		if (!$this->session->userdata('status') || $this->session->userdata('status') !== 'telah_login') {
@@ -64,47 +65,26 @@ class chat extends CI_Controller
                 $intent = strtolower($responseData['intent']); // Ensure lowercase matching
                 $confidence = $responseData['confidence'] ?? 0;
                 error_log("Intent received: $intent, Confidence: $confidence");
-                
-                switch ($intent) {
-					case 'greeting':
-						$result['response'] = 'Halo! Ada yang bisa saya bantu? ??';
-						break;
-					case 'goodbye':
-						$result['response'] = 'Sampai jumpa! Semoga harimu menyenangkan! ??';
-						break;
-					case 'confirm':
-						$result['response'] = 'Baik, saya akan memproses permintaan Anda! ?';
-						break;
-					case 'denied':
-						$result['response'] = 'Baik, saya tidak akan melanjutkan permintaan ini. ?';
-						break;					
-                    case 'jam_layanan':
-                        $result['response'] = 'Jam layanan perpustakaan adalah Senin-Jumat: 08.00-16.00, Sabtu: 09.00-13.00, Minggu: Tutup';
-                        break;                        
-                    case 'cari_buku':
-                        $result['response'] = 'Silakan masukkan deskripsi bukunya seperti genre, judul, atau kategori.';
-                        $result['next_action'] = 'wait_book_recommendation';
-                        break;                        
-                    case 'unknown':
-                        $result['response'] = 'Maaf, saya tidak mengenali perintah ini. Bisa dijelaskan lebih lanjut?';
-                        break;
-                        
-                    default:
-                        $result['response'] = "Maaf, saya belum bisa memproses permintaan tersebut.";
-                        break;
-                }
-            }
-            
-            // Simpan percakapan ke database           
-            $data = [
-                'user' => $user_id,
-                'user_message' => $message,
-                'bot_response' => $result['response']
-            ];
-            $this->db->db_debug = TRUE;
+				$bot_output = get_bot_response($intent);
 
-            $this->chatModel->saveChat('chats', $data);  
-            
+				$response_text = $bot_output['response'];
+				$next_action = isset($bot_output['next_action']) ? $bot_output['next_action'] : null;
+
+				$result['response'] = $response_text;
+				if ($next_action) {
+					$result['next_action'] = $next_action;
+				}
+				// Simpan percakapan ke database           
+				$data = [
+					'user' => $user_id,
+					'user_message' => $message,
+					'bot_response' => $result['response']
+				];
+				$this->db->db_debug = TRUE;
+				$this->chatModel->saveChat('chats', $data);
+
+            }
+
         } else {
             error_log("Flask API error: HTTP $httpcode");
             $result['response'] = 'Terjadi kesalahan saat menghubungi server. Silakan coba lagi.';
