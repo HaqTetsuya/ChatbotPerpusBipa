@@ -35,3 +35,4 @@ py/indobert_intent_model/
 py/model/
 application/logs
 ~$*.xlsx
+~$*.docx
