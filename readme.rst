@@ -6,6 +6,12 @@
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/HaqTetsuya/ChatbotPerpusBipa/blob/main/books.ipynb
    :alt: train the model
+
+
+modelnya belum jadi
+
+
+
 ChatbotPerpusBipa
 =================
 
