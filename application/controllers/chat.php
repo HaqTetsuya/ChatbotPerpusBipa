@@ -95,75 +95,73 @@ class chat extends CI_Controller
 
 	
     public function sendbook() {
-        if (!$this->input->is_ajax_request()) {
-            show_error('Direct access not allowed', 403);
-            return;
-        }
-		
-		$user_id= $this->session->userdata('id');
-        $json_data = file_get_contents('php://input');
-        $post_data = json_decode($json_data, true);
-        $message = isset($post_data['message']) ? trim($post_data['message']) : '';
+		if (!$this->input->is_ajax_request()) {
+			show_error('Direct access not allowed', 403);
+			return;
+		}
 
-        if (empty($message)) {
-            $this->output
-                ->set_content_type('application/json')
-                ->set_output(json_encode(['error' => 'No message provided']));
-            return;
-        }
+		$user_id = $this->session->userdata('id');
+		$json_data = file_get_contents('php://input');
+		$post_data = json_decode($json_data, true);
+		$message = isset($post_data['message']) ? trim($post_data['message']) : '';
 
-        $api_data = [
-            'query' => $message,
-            'top_n' => 5
-        ];
+		if (empty($message)) {
+			$this->output
+				->set_content_type('application/json')
+				->set_output(json_encode(['error' => 'No message provided']));
+			return;
+		}
 
-        $ch = curl_init('http://localhost:5000/recommend');
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_POST, true);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($api_data));
-        curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+		$api_data = [
+			'query' => $message,
+			'top_n' => 5
+		];
 
-        $response = curl_exec($ch);
-        $status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-        $curl_error = curl_error($ch);
-        curl_close($ch);
+		$ch = curl_init('http://localhost:5000/api/recommend'); // perhatikan endpoint-nya
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($ch, CURLOPT_POST, true);
+		curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($api_data));
+		curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
 
-        if ($response === false) {
-            log_message('error', 'cURL Error: ' . $curl_error);
-            $this->output
-                ->set_content_type('application/json')
-                ->set_output(json_encode(['error' => 'Failed to connect to recommendation service', 'details' => $curl_error]));
-            return;
-        }
+		$response = curl_exec($ch);
+		$status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+		$curl_error = curl_error($ch);
+		curl_close($ch);
 
-        $api_response = json_decode($response, true);
+		if ($response === false) {
+			log_message('error', 'cURL Error: ' . $curl_error);
+			$this->output
+				->set_content_type('application/json')
+				->set_output(json_encode(['error' => 'Failed to connect to recommendation service', 'details' => $curl_error]));
+			return;
+		}
 
-        if ($status_code != 200 || !isset($api_response['results'])) {
-            $error = isset($api_response['error']) ? $api_response['error'] : 'Unknown error';
-            log_message('error', 'API Error: ' . $error . ' (Status: ' . $status_code . ')');
-            $this->output
-                ->set_content_type('application/json')
-                ->set_output(json_encode(['error' => 'Recommendation service error', 'details' => $error]));
-            return;
-        }
+		$api_response = json_decode($response, true);
 
-        $formatted_response = $this->format_recommendations($api_response['results']);
-		
+		if ($status_code != 200 || !isset($api_response['recommendations'])) {
+			$error = isset($api_response['error']) ? $api_response['error'] : 'Unknown error';
+			log_message('error', 'API Error: ' . $error . ' (Status: ' . $status_code . ')');
+			$this->output
+				->set_content_type('application/json')
+				->set_output(json_encode(['error' => 'Recommendation service error', 'details' => $error]));
+			return;
+		}
+
+		$formatted_response = $this->format_recommendations($api_response['recommendations']);
+
 		$data = [
-                'user' => $user_id,
-                'user_message' => $message,
-                'bot_response' => $formatted_response
-            ];
+			'user' => $user_id,
+			'user_message' => $message,
+			'bot_response' => $formatted_response
+		];
 
-        // ✅ Save chat to database
-        $this->chatModel->saveChat('chats', $data);
+		$this->chatModel->saveChat('chats', $data);
 
-        // Return response
-        $this->output
-            ->set_content_type('application/json')
-            ->set_output(json_encode(['response' => $formatted_response]));
-    }
-    
+		$this->output
+			->set_content_type('application/json')
+			->set_output(json_encode(['response' => $formatted_response]));
+	}
+
     /**
      * Format book recommendations into HTML for display
      */
