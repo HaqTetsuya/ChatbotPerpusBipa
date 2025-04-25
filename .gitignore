@@ -36,3 +36,4 @@ py/model/
 application/logs
 ~$*.xlsx
 ~$*.docx
+BooksDatasetCleanFiltered.csv
