@@ -1,7 +1,11 @@
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/HaqTetsuya/ChatbotPerpusBipa/blob/main/IndobertPerpusChatbot.ipynb
-   :alt: Open in Colab
+   :alt: train the model
 
+
+.. image:: https://colab.research.google.com/assets/colab-badge.svg
+   :target: https://colab.research.google.com/github/HaqTetsuya/ChatbotPerpusBipa/blob/main/books.ipynb
+   :alt: train the model
 ChatbotPerpusBipa
 =================
 
