@@ -1,1 +1,52 @@
 2025-04-25 22:25:13,990 - __main__ - INFO - BookRecommender initialized with model: all-mpnet-base-v2
+2025-04-25 22:46:08,958 - __main__ - INFO - BookRecommender initialized with model: all-mpnet-base-v2
+2025-04-25 22:46:08,958 - __main__ - INFO - Loading intent resources from C:\xampp\htdocs\ChatbotPerpusBipa\py\model...
+2025-04-25 22:49:53,117 - __main__ - INFO - BookRecommender initialized with model: all-mpnet-base-v2
+2025-04-25 22:49:53,133 - __main__ - INFO - Loading intent resources from C:\xampp\htdocs\ChatbotPerpusBipa\py\model...
+2025-04-25 22:49:55,539 - __main__ - INFO - Intent resources loaded successfully
+2025-04-25 22:49:55,539 - __main__ - INFO - Loaded 7 intent classes
+2025-04-25 22:49:55,539 - __main__ - INFO - Thresholds: {'energy_threshold': -5.104954242706299, 'msp_threshold': 0.8676306009292603}
+2025-04-25 22:49:55,539 - __main__ - INFO - Intent classification model loaded successfully!
+2025-04-25 22:49:55,539 - __main__ - INFO - Loading recommender model...
+2025-04-25 22:49:55,586 - __main__ - INFO - Loaded configuration: model_name=all-mpnet-base-v2
+2025-04-25 22:49:55,617 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-04-25 22:49:55,617 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: recommender_model\sentence_transformer
+2025-04-25 22:50:07,756 - __main__ - ERROR - Error loading model: Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory recommender_model\sentence_transformer.
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\ChatbotPerpusBipa\py\app2.py", line 89, in load_model
+    self.model = SentenceTransformer(model_path)
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sentence_transformers\SentenceTransformer.py", line 309, in __init__
+    modules, self.module_kwargs = self._load_sbert_model(
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sentence_transformers\SentenceTransformer.py", line 1674, in _load_sbert_model
+    module = module_class(model_name_or_path, cache_dir=cache_folder, backend=self.backend, **kwargs)
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sentence_transformers\models\Transformer.py", line 81, in __init__
+    self._load_model(model_name_or_path, config, cache_dir, backend, is_peft_model, **model_args)
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sentence_transformers\models\Transformer.py", line 181, in _load_model
+    self.auto_model = AutoModel.from_pretrained(
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\transformers\models\auto\auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\transformers\modeling_utils.py", line 3763, in from_pretrained
+    raise EnvironmentError(
+OSError: Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory recommender_model\sentence_transformer.
+2025-04-25 22:50:08,499 - __main__ - ERROR - Failed to load book recommender model.
+2025-04-25 22:50:08,859 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.8:5000
+2025-04-25 22:50:08,859 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-25 22:57:55,330 - __main__ - INFO - 
+========== INTENT PREDICTION DEBUG ==========
+2025-04-25 22:57:55,330 - __main__ - INFO - Input Text: ccariin buku
+2025-04-25 22:57:55,345 - __main__ - INFO - Detection Method: combined
+2025-04-25 22:58:07,246 - __main__ - INFO - Logits: [[4.812442779541016, -1.4527872800827026, -0.5470632910728455, -1.3860161304473877, -0.7837795615196228, -0.8235347867012024, -0.01765800081193447]]
+2025-04-25 22:58:07,560 - __main__ - INFO - Softmax Probabilities: [[0.9766561388969421, 0.0018568926025182009, 0.004593437071889639, 0.001985113136470318, 0.003625210141763091, 0.0034839159343391657, 0.007799297571182251]]
+2025-04-25 22:58:07,560 - __main__ - INFO - Max Probability (Confidence): 0.9767
+2025-04-25 22:58:07,560 - __main__ - INFO - Predicted Index: 0
+2025-04-25 22:58:07,747 - __main__ - INFO - Energy Score: -4.8361
+2025-04-25 22:58:07,747 - __main__ - INFO - OOD Detection -> is_ood: False
+2025-04-25 22:58:07,747 - __main__ - INFO - Prediction marked as IN-DISTRIBUTION.
+2025-04-25 22:58:07,747 - __main__ - INFO - Predicted Intent: cari_buku
+2025-04-25 22:58:07,747 - __main__ - INFO - =============================================
+
+2025-04-25 22:58:07,747 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 22:58:07] "POST /api/analyze HTTP/1.1" 200 -
+2025-04-25 22:58:14,611 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 22:58:14] "[35m[1mPOST /api/recommend HTTP/1.1[0m" 503 -

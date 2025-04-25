@@ -270,9 +270,8 @@ def predict_intent_with_enhanced_ood(text, model, tokenizer, intent_classes,
         "energy_score": energy.item()
     }
 
-@app.before_first_request
 def initialize_models():
-    """Load both models before the first request."""
+    """Load both models on startup."""
     global recommender_model_loaded
     
     # Load intent classification model
@@ -433,6 +432,9 @@ def index():
     })
 
 if __name__ == '__main__':
+    # Initialize models when the app starts
+    initialize_models()
+    
     # Set port from environment variable or default to 5000
     port = int(os.environ.get('PORT', 5000))
     
