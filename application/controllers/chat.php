@@ -39,7 +39,7 @@ class chat extends CI_Controller
         $message = $data['message'] ?? '';
 
         // Panggil API Flask untuk menganalisis intent
-        $ch = curl_init('http://localhost:5000/analyze');
+        $ch = curl_init('http://localhost:5000/api/analyze');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode(["text" => $message]));

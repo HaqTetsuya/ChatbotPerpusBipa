@@ -341,33 +341,31 @@ def analyze():
 def recommend():
     """Endpoint to get book recommendations based on user query."""
     global recommender_model_loaded
-    
+
     if not recommender_model_loaded:
         return jsonify({
             "error": "Model not loaded",
             "message": "The recommendation model is not properly loaded."
         }), 503
-    
-    # Get request data
+
     data = request.get_json()
-    
+
     if not data:
         return jsonify({
             "error": "Invalid request",
             "message": "No JSON data provided."
         }), 400
-    
-    # Extract parameters
+
     query = data.get('query')
     top_n = data.get('top_n', 5)
     include_description = data.get('include_description', False)
-    
+
     if not query:
         return jsonify({
             "error": "Missing parameter",
             "message": "Query parameter is required."
         }), 400
-    
+
     try:
         # Get recommendations
         recommendations = recommender.recommend_books(
@@ -375,19 +373,37 @@ def recommend():
             top_n=int(top_n),
             include_description=bool(include_description)
         )
-        
+
+        # CLEAN recommendations to make it JSON serializable
+        def clean_np(obj):
+            if isinstance(obj, np.integer):
+                return int(obj)
+            elif isinstance(obj, np.floating):
+                return float(obj)
+            elif isinstance(obj, np.ndarray):
+                return obj.tolist()
+            elif isinstance(obj, dict):
+                return {k: clean_np(v) for k, v in obj.items()}
+            elif isinstance(obj, list):
+                return [clean_np(i) for i in obj]
+            else:
+                return obj
+
+        recommendations_clean = clean_np(recommendations)
+
         return jsonify({
             "query": query,
-            "recommendations": recommendations,
-            "count": len(recommendations)
+            "recommendations": recommendations_clean,
+            "count": len(recommendations_clean)
         })
-        
+
     except Exception as e:
         logger.error(f"Error in recommendation endpoint: {str(e)}", exc_info=True)
         return jsonify({
             "error": "Processing error",
             "message": f"An error occurred while processing your request: {str(e)}"
         }), 500
+
 
 @app.route('/api/stats', methods=['GET'])
 def get_stats():

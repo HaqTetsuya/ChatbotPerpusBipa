@@ -32,6 +32,7 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 /tests/results/
 
 py/indobert_intent_model/
+py/recommender_model/
 py/model/
 application/logs
 ~$*.xlsx

@@ -50,3 +50,89 @@ OSError: Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, 
 
 2025-04-25 22:58:07,747 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 22:58:07] "POST /api/analyze HTTP/1.1" 200 -
 2025-04-25 22:58:14,611 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 22:58:14] "[35m[1mPOST /api/recommend HTTP/1.1[0m" 503 -
+2025-04-26 16:43:29,245 - __main__ - INFO - BookRecommender initialized with model: all-mpnet-base-v2
+2025-04-26 16:43:29,261 - __main__ - INFO - Loading intent resources from C:\xampp\htdocs\ChatbotPerpusBipa\py\model...
+2025-04-26 16:43:37,589 - __main__ - INFO - Intent resources loaded successfully
+2025-04-26 16:43:37,589 - __main__ - INFO - Loaded 7 intent classes
+2025-04-26 16:43:37,605 - __main__ - INFO - Thresholds: {'energy_threshold': -5.104954242706299, 'msp_threshold': 0.8676306009292603}
+2025-04-26 16:43:37,605 - __main__ - INFO - Intent classification model loaded successfully!
+2025-04-26 16:43:37,605 - __main__ - INFO - Loading recommender model...
+2025-04-26 16:43:37,620 - __main__ - INFO - Loaded configuration: model_name=all-mpnet-base-v2
+2025-04-26 16:43:37,652 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-04-26 16:43:37,652 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: recommender_model\sentence_transformer
+2025-04-26 16:43:51,306 - __main__ - INFO - Model loaded from recommender_model\sentence_transformer
+2025-04-26 16:43:51,743 - __main__ - INFO - Embeddings loaded: 10092 book vectors
+2025-04-26 16:43:52,306 - __main__ - INFO - DataFrame loaded: 10092 books
+2025-04-26 16:43:52,306 - __main__ - INFO - Book recommender model loaded successfully!
+2025-04-26 16:43:52,665 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.13:5000
+2025-04-26 16:43:52,665 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-26 16:46:29,190 - __main__ - INFO - 
+========== INTENT PREDICTION DEBUG ==========
+2025-04-26 16:46:29,190 - __main__ - INFO - Input Text: hello
+2025-04-26 16:46:29,190 - __main__ - INFO - Detection Method: combined
+2025-04-26 16:46:38,098 - __main__ - INFO - Logits: [[-0.8639754056930542, -0.9727922081947327, -0.6298874020576477, 0.29036566615104675, 5.041785717010498, -1.0336787700653076, -0.6218116879463196]]
+2025-04-26 16:46:38,612 - __main__ - INFO - Softmax Probabilities: [[0.0026624270249158144, 0.002387917134910822, 0.003364657051861286, 0.008445040322840214, 0.9775010347366333, 0.0022468632087111473, 0.003391939215362072]]
+2025-04-26 16:46:38,643 - __main__ - INFO - Max Probability (Confidence): 0.9775
+2025-04-26 16:46:38,643 - __main__ - INFO - Predicted Index: 4
+2025-04-26 16:46:39,159 - __main__ - INFO - Energy Score: -5.0645
+2025-04-26 16:46:39,159 - __main__ - INFO - OOD Detection -> is_ood: False
+2025-04-26 16:46:39,159 - __main__ - INFO - Prediction marked as IN-DISTRIBUTION.
+2025-04-26 16:46:39,159 - __main__ - INFO - Predicted Intent: greeting
+2025-04-26 16:46:39,159 - __main__ - INFO - =============================================
+
+2025-04-26 16:46:39,159 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 16:46:39] "POST /api/analyze HTTP/1.1" 200 -
+2025-04-26 16:46:43,424 - __main__ - INFO - 
+========== INTENT PREDICTION DEBUG ==========
+2025-04-26 16:46:43,424 - __main__ - INFO - Input Text: test
+2025-04-26 16:46:43,424 - __main__ - INFO - Detection Method: combined
+2025-04-26 16:46:43,674 - __main__ - INFO - Logits: [[-1.012579321861267, -0.8236289024353027, -0.47059154510498047, 0.05661055073142052, 5.22104549407959, -1.3375037908554077, -0.617425262928009]]
+2025-04-26 16:46:43,674 - __main__ - INFO - Softmax Probabilities: [[0.001928093726746738, 0.0023291008546948433, 0.0033152056857943535, 0.005616573616862297, 0.9825553894042969, 0.0013932056026533246, 0.002862472552806139]]
+2025-04-26 16:46:43,674 - __main__ - INFO - Max Probability (Confidence): 0.9826
+2025-04-26 16:46:43,674 - __main__ - INFO - Predicted Index: 4
+2025-04-26 16:46:43,674 - __main__ - INFO - Energy Score: -5.2386
+2025-04-26 16:46:43,689 - __main__ - INFO - OOD Detection -> is_ood: False
+2025-04-26 16:46:43,689 - __main__ - INFO - Prediction marked as IN-DISTRIBUTION.
+2025-04-26 16:46:43,689 - __main__ - INFO - Predicted Intent: greeting
+2025-04-26 16:46:43,689 - __main__ - INFO - =============================================
+
+2025-04-26 16:46:43,689 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 16:46:43] "POST /api/analyze HTTP/1.1" 200 -
+2025-04-26 16:47:49,955 - __main__ - INFO - 
+========== INTENT PREDICTION DEBUG ==========
+2025-04-26 16:47:49,955 - __main__ - INFO - Input Text: cariin buku dong kakk
+2025-04-26 16:47:49,955 - __main__ - INFO - Detection Method: combined
+2025-04-26 16:47:50,690 - __main__ - INFO - Logits: [[4.827128887176514, -1.567173957824707, -0.6807873249053955, -1.0236364603042603, -0.8439164161682129, -0.6846497654914856, -0.36458274722099304]]
+2025-04-26 16:47:50,690 - __main__ - INFO - Softmax Probabilities: [[0.9788097739219666, 0.0016356405103579164, 0.0039686295203864574, 0.002816717140376568, 0.003371278289705515, 0.003953330684453249, 0.005444608628749847]]
+2025-04-26 16:47:50,690 - __main__ - INFO - Max Probability (Confidence): 0.9788
+2025-04-26 16:47:50,690 - __main__ - INFO - Predicted Index: 0
+2025-04-26 16:47:50,690 - __main__ - INFO - Energy Score: -4.8485
+2025-04-26 16:47:50,705 - __main__ - INFO - OOD Detection -> is_ood: False
+2025-04-26 16:47:50,705 - __main__ - INFO - Prediction marked as IN-DISTRIBUTION.
+2025-04-26 16:47:50,705 - __main__ - INFO - Predicted Intent: cari_buku
+2025-04-26 16:47:50,705 - __main__ - INFO - =============================================
+
+2025-04-26 16:47:50,705 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 16:47:50] "POST /api/analyze HTTP/1.1" 200 -
+2025-04-26 16:47:59,389 - __main__ - INFO - Finding books similar to: 'pemrograman Python'
+2025-04-26 16:48:21,280 - __main__ - INFO - Successfully generated 5 recommendations
+2025-04-26 16:48:21,280 - __main__ - ERROR - Error in recommendation endpoint: Object of type int64 is not JSON serializable
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\ChatbotPerpusBipa\py\app2.py", line 379, in recommend
+    return jsonify({
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\json\__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\json\provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\json\provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\json\provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type int64 is not JSON serializable
+2025-04-26 16:48:22,821 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 16:48:22] "[35m[1mPOST /api/recommend HTTP/1.1[0m" 500 -
