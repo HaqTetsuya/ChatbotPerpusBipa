@@ -173,7 +173,7 @@ class chat extends CI_Controller
         $output = "<strong>Buku yang direkomendasikan untuk Anda:</strong><br><br>";
         
         foreach ($results as $index => $book) {
-            $relevance_percentage = $book['relevance'] * 100;
+            $relevance_percentage = $book['relevance_score'] * 100;
             $year = $book['year'] ? $book['year'] : 'Tahun tidak diketahui';
             
             $output .= "<div class='book-recommendation'>";

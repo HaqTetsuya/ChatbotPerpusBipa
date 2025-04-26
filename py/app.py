@@ -226,4 +226,4 @@ if __name__ == '__main__':
     # Option 2 (Alternative): Disable debug mode entirely for production
     # app.run(debug=False, host='0.0.0.0', port=5000)
     # app.run(debug=False, host='0.0.0.0', port=5000)
-#curl -X POST http://localhost:5000/analyze -H "Content-Type: application/json" -d '{"text": "buku fantasi romance"}'	
+#curl -X POST http://localhost:5000/api/recommend \-H "Content-Type: application/json" \-d '{"query": "magic fantasy adventure","top_n": 5,"include_description": true}'

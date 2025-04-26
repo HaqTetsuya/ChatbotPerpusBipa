@@ -107,7 +107,7 @@ class BookRecommender:
             logger.error(f"Error loading model: {str(e)}", exc_info=True)
             return False
 
-    def recommend_books(self, user_query, top_n=5, include_description=False):
+    def recommend_books(self, user_query, top_n=5, include_description=True):
         """Recommend books based on user query."""
         if self.model is None or self.book_embeddings is None or self.df is None:
             logger.error("Model not initialized. Cannot make recommendations.")
@@ -358,7 +358,7 @@ def recommend():
 
     query = data.get('query')
     top_n = data.get('top_n', 5)
-    include_description = data.get('include_description', False)
+    include_description = data.get('include_description', True)
 
     if not query:
         return jsonify({
