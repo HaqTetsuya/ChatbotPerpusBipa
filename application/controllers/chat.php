@@ -138,16 +138,21 @@ class chat extends CI_Controller
 
 		$api_response = json_decode($response, true);
 
-		if ($status_code != 200 || !isset($api_response['recommendations'])) {
+		if ($response === false || $status_code >= 500) {
+			// Jika tidak bisa konek sama sekali atau error server
 			$error = isset($api_response['error']) ? $api_response['error'] : 'Unknown error';
 			log_message('error', 'API Error: ' . $error . ' (Status: ' . $status_code . ')');
 			$this->output
 				->set_content_type('application/json')
+				->set_status_header(500)
 				->set_output(json_encode(['error' => 'Recommendation service error', 'details' => $error]));
 			return;
 		}
 
-		$formatted_response = $this->format_recommendations($api_response['recommendations']);
+		// Kalau sukses walaupun recommendations kosong, tetap lanjut
+		$recommendations = $api_response['recommendations'] ?? [];
+
+		$formatted_response = $this->format_recommendations($recommendations);
 
 		$data = [
 			'user' => $user_id,
@@ -157,9 +162,8 @@ class chat extends CI_Controller
 
 		$this->chatModel->saveChat('chats', $data);
 
-		$this->output
-			->set_content_type('application/json')
-			->set_output(json_encode(['response' => $formatted_response]));
+		$this->output->set_content_type('application/json')->set_output(json_encode(['response' => $formatted_response]));
+
 	}
 
     /**

@@ -81,20 +81,32 @@ $(document).ready(function() {
                     scrollToBottom();
                 },
                 error: function(xhr, status, error) {
-                    $('#typing-indicator').remove();
-                    $('#chat-container').append(`
-                        <div class="flex items-start space-x-2 message-container">
-                            <div class="w-10 h-10 rounded-full border-2 border-black flex-shrink-0"></div>
-                            <div class="bg-white p-3 rounded-lg border-2 border-black">
-                                <p class="font-bold">ChatBot</p>
-                                <p>Terjadi kesalahan saat merekomendasikan buku. Silakan coba lagi.</p>
-                                <div class="timestamp">${timestamp}</div>
-                            </div>
-                        </div>
-                    `);
-                    waitingForRecommendation = false;
-                    scrollToBottom();
-                }
+					console.error('XHR:', xhr);
+					console.error('Status:', status);
+					console.error('Error:', error);
+				
+					$('#typing-indicator').remove();
+					let serverResponse = '';
+					try {
+						serverResponse = JSON.parse(xhr.responseText).response || "Terjadi kesalahan saat merekomendasikan buku. Silakan coba lagi.";
+					} catch (e) {
+						serverResponse = "Terjadi kesalahan saat merekomendasikan buku. Silakan coba lagi.";
+					}
+
+					$('#chat-container').append(`
+						<div class="flex items-start space-x-2 message-container">
+							<div class="w-10 h-10 rounded-full border-2 border-black flex-shrink-0"></div>
+							<div class="bg-white p-3 rounded-lg border-2 border-black">
+								<p class="font-bold">ChatBot</p>
+								<div>${serverResponse}</div>
+								<div class="timestamp">${timestamp}</div>
+							</div>
+						</div>
+					`);
+					waitingForRecommendation = false;
+					scrollToBottom();
+				}
+
             });
             return; // keluar dari fungsi karena kita sudah tangani
         }
