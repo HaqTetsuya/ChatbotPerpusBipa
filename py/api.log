@@ -294,3 +294,64 @@ TypeError: Object of type int64 is not JSON serializable
 2025-04-26 18:08:41,514 - __main__ - INFO - Finding books similar to: 'asian culture'
 2025-04-26 18:08:54,188 - __main__ - INFO - Successfully generated 5 recommendations
 2025-04-26 18:08:54,203 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 18:08:54] "POST /api/recommend HTTP/1.1" 200 -
+2025-04-26 18:11:12,016 - __main__ - INFO - BookRecommender initialized with model: all-mpnet-base-v2
+2025-04-26 18:11:12,016 - __main__ - INFO - Loading intent resources from C:\xampp\htdocs\ChatbotPerpusBipa\py\model...
+2025-04-26 18:11:14,032 - __main__ - INFO - Intent resources loaded successfully
+2025-04-26 18:11:14,032 - __main__ - INFO - Loaded 7 intent classes
+2025-04-26 18:11:14,032 - __main__ - INFO - Thresholds: {'energy_threshold': -5.104954242706299, 'msp_threshold': 0.8676306009292603}
+2025-04-26 18:11:14,032 - __main__ - INFO - Intent classification model loaded successfully!
+2025-04-26 18:11:14,032 - __main__ - INFO - Loading recommender model...
+2025-04-26 18:11:14,047 - __main__ - INFO - Loaded configuration: model_name=all-mpnet-base-v2
+2025-04-26 18:11:14,047 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-04-26 18:11:14,047 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: recommender_model\sentence_transformer
+2025-04-26 18:11:16,884 - __main__ - INFO - Model loaded from recommender_model\sentence_transformer
+2025-04-26 18:11:17,493 - __main__ - INFO - Embeddings loaded: 10092 book vectors
+2025-04-26 18:11:17,727 - __main__ - INFO - DataFrame loaded: 10092 books
+2025-04-26 18:11:17,727 - __main__ - INFO - Book recommender model loaded successfully!
+2025-04-26 18:11:17,868 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.13:5000
+2025-04-26 18:11:17,868 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-26 18:19:24,219 - __main__ - INFO - 
+========== INTENT PREDICTION DEBUG ==========
+2025-04-26 18:19:24,229 - __main__ - INFO - Input Text: cariin bukuuu
+2025-04-26 18:19:24,229 - __main__ - INFO - Detection Method: combined
+2025-04-26 18:19:25,264 - __main__ - INFO - Logits: [[4.801372528076172, -1.4928969144821167, -0.5028115510940552, -1.1661001443862915, -0.6955726146697998, -0.8573707342147827, -0.3049924969673157]]
+2025-04-26 18:19:25,264 - __main__ - INFO - Softmax Probabilities: [[0.9774954915046692, 0.0018052952364087105, 0.00485888822004199, 0.002503077732399106, 0.004007021896541119, 0.003408425021916628, 0.005921729374676943]]
+2025-04-26 18:19:25,264 - __main__ - INFO - Max Probability (Confidence): 0.9775
+2025-04-26 18:19:25,264 - __main__ - INFO - Predicted Index: 0
+2025-04-26 18:19:25,280 - __main__ - INFO - Energy Score: -4.8241
+2025-04-26 18:19:25,280 - __main__ - INFO - OOD Detection -> is_ood: False
+2025-04-26 18:19:25,280 - __main__ - INFO - Prediction marked as IN-DISTRIBUTION.
+2025-04-26 18:19:25,280 - __main__ - INFO - Predicted Intent: cari_buku
+2025-04-26 18:19:25,280 - __main__ - INFO - =============================================
+
+2025-04-26 18:19:25,296 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 18:19:25] "POST /api/analyze HTTP/1.1" 200 -
+2025-04-26 18:19:41,178 - __main__ - INFO - Finding books similar to: 'languages history'
+2025-04-26 18:19:58,617 - __main__ - INFO - Successfully generated 5 recommendations
+2025-04-26 18:19:58,617 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 18:19:58] "POST /api/recommend HTTP/1.1" 200 -
+2025-04-26 18:23:09,208 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 18:23:09] "[33mPOST /api/recomend HTTP/1.1[0m" 404 -
+2025-04-26 18:23:35,651 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 18:23:35] "[31m[1mPOST /api/recommend HTTP/1.1[0m" 400 -
+2025-04-26 18:24:07,338 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 18:24:07] "[31m[1mPOST /api/recommend HTTP/1.1[0m" 400 -
+2025-04-26 18:26:23,757 - __main__ - INFO - Finding books similar to: 'magic fantasy adventure'
+2025-04-26 18:26:24,272 - __main__ - INFO - Successfully generated 5 recommendations
+2025-04-26 18:26:24,288 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 18:26:24] "POST /api/recommend HTTP/1.1" 200 -
+2025-04-26 18:38:19,802 - __main__ - INFO - 
+========== INTENT PREDICTION DEBUG ==========
+2025-04-26 18:38:19,819 - __main__ - INFO - Input Text: carikan buku
+2025-04-26 18:38:19,822 - __main__ - INFO - Detection Method: combined
+2025-04-26 18:38:21,864 - __main__ - INFO - Logits: [[4.785589218139648, -1.4029834270477295, -0.5354923009872437, -1.1561228036880493, -0.5859556794166565, -0.9554831385612488, -0.3478163480758667]]
+2025-04-26 18:38:21,885 - __main__ - INFO - Softmax Probabilities: [[0.9772090911865234, 0.0020059701055288315, 0.004776074551045895, 0.0025676439981907606, 0.004541039001196623, 0.003138134488835931, 0.005762059707194567]]
+2025-04-26 18:38:21,885 - __main__ - INFO - Max Probability (Confidence): 0.9772
+2025-04-26 18:38:21,885 - __main__ - INFO - Predicted Index: 0
+2025-04-26 18:38:21,885 - __main__ - INFO - Energy Score: -4.8086
+2025-04-26 18:38:21,885 - __main__ - INFO - OOD Detection -> is_ood: False
+2025-04-26 18:38:21,885 - __main__ - INFO - Prediction marked as IN-DISTRIBUTION.
+2025-04-26 18:38:21,885 - __main__ - INFO - Predicted Intent: cari_buku
+2025-04-26 18:38:21,885 - __main__ - INFO - =============================================
+
+2025-04-26 18:38:21,901 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 18:38:21] "POST /api/analyze HTTP/1.1" 200 -
+2025-04-26 18:38:27,536 - __main__ - INFO - Finding books similar to: 'cooking'
+2025-04-26 18:38:28,378 - __main__ - INFO - Successfully generated 5 recommendations
+2025-04-26 18:38:28,381 - werkzeug - INFO - 127.0.0.1 - - [26/Apr/2025 18:38:28] "POST /api/recommend HTTP/1.1" 200 -

@@ -51,7 +51,8 @@ if (!function_exists('get_bot_response')) {
 
             case 'confirm':
                 return [
-                    'response' => '<p><strong>Baik, terima kasih!</strong> Permintaan Anda telah dikonfirmasi. ✅</p>'
+                    'response' => '<p><strong>Baik, terima kasih!</strong> Permintaan Anda telah dikonfirmasi. ✅</p>',
+					'next_action' => 'confirmation'
                 ];
 
             case 'denied':

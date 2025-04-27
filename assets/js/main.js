@@ -1,5 +1,6 @@
 $(document).ready(function() {
     let waitingForRecommendation = false;
+	let wait_confirmation = false;
 
     // Function to scroll chat to bottom
     function scrollToBottom() {
@@ -48,7 +49,8 @@ $(document).ready(function() {
         `);
         scrollToBottom();
         
-        console.log("waitingForRecommendation status:", waitingForRecommendation); // debug log
+        console.log("waitingForRecommendation status:", waitingForRecommendation);
+		console.log("waitingForConfirmation status:", wait_confirmation);		// debug log
 
         // Percabangan untuk input rekomendasi
         if (waitingForRecommendation) {
@@ -78,6 +80,7 @@ $(document).ready(function() {
                     
                     // Reset state ke mode intent normal
                     waitingForRecommendation = false;
+					wait_confirmation= true;
                     scrollToBottom();
                 },
                 error: function(xhr, status, error) {
@@ -104,6 +107,8 @@ $(document).ready(function() {
 						</div>
 					`);
 					waitingForRecommendation = false;
+					wait_confirmation = false;
+					
 					scrollToBottom();
 				}
 
@@ -137,7 +142,9 @@ $(document).ready(function() {
 
                 if (response.next_action && response.next_action === 'wait_book_recommendation') {
                     waitingForRecommendation = true;
-                }
+                }else if(wait_confirmation && response.next_action && response.next_action === 'confirmation'){
+					waitingForRecommendation = true;
+				}
             },
             error: function(xhr, status, error) {
                 $('#typing-indicator').remove();
