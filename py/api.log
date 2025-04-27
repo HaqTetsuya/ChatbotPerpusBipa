@@ -734,3 +734,33 @@ TypeError: Object of type int64 is not JSON serializable
 2025-04-27 12:56:17,299 - __main__ - INFO - Finding books similar to: 'american dirty secret'
 2025-04-27 12:56:18,114 - __main__ - INFO - Successfully generated 5 recommendations
 2025-04-27 12:56:18,114 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2025 12:56:18] "POST /api/recommend HTTP/1.1" 200 -
+2025-04-27 21:58:26,358 - __main__ - INFO - BookRecommender initialized with model: all-mpnet-base-v2
+2025-04-27 21:58:26,373 - __main__ - INFO - Loading intent resources from C:\xampp\htdocs\ChatbotPerpusBipa\py\model...
+2025-04-27 21:58:32,595 - __main__ - INFO - Intent resources loaded successfully
+2025-04-27 21:58:32,595 - __main__ - INFO - Loaded 7 intent classes
+2025-04-27 21:58:32,595 - __main__ - INFO - Thresholds: {'energy_threshold': -5.104954242706299, 'msp_threshold': 0.8676306009292603}
+2025-04-27 21:58:32,595 - __main__ - INFO - Intent classification model loaded successfully!
+2025-04-27 21:58:32,595 - __main__ - INFO - Loading recommender model...
+2025-04-27 21:58:32,626 - __main__ - INFO - Loaded configuration: model_name=all-mpnet-base-v2
+2025-04-27 21:58:32,642 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-04-27 21:58:32,642 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: recommender_model\sentence_transformer
+2025-04-27 21:59:15,050 - __main__ - INFO - BookRecommender initialized with model: all-mpnet-base-v2
+2025-04-27 21:59:15,050 - __main__ - INFO - Loading intent resources from C:\xampp\htdocs\ChatbotPerpusBipa\py\model...
+2025-04-27 21:59:16,925 - __main__ - INFO - Intent resources loaded successfully
+2025-04-27 21:59:16,925 - __main__ - INFO - Loaded 7 intent classes
+2025-04-27 21:59:16,940 - __main__ - INFO - Thresholds: {'energy_threshold': -5.104954242706299, 'msp_threshold': 0.8676306009292603}
+2025-04-27 21:59:16,940 - __main__ - INFO - Intent classification model loaded successfully!
+2025-04-27 21:59:16,940 - __main__ - INFO - Loading recommender model...
+2025-04-27 21:59:16,940 - __main__ - INFO - Loaded configuration: model_name=all-mpnet-base-v2
+2025-04-27 21:59:16,956 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-04-27 21:59:16,956 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: recommender_model\sentence_transformer
+2025-04-27 22:16:54,455 - __main__ - INFO - BookRecommender initialized with model: all-mpnet-base-v2
+2025-04-27 22:16:54,471 - __main__ - INFO - Loading intent resources from C:\xampp\htdocs\ChatbotPerpusBipa\py\model...
+2025-04-27 22:16:58,393 - __main__ - INFO - Intent resources loaded successfully
+2025-04-27 22:16:58,393 - __main__ - INFO - Loaded 7 intent classes
+2025-04-27 22:16:58,409 - __main__ - INFO - Thresholds: {'energy_threshold': -5.104954242706299, 'msp_threshold': 0.8676306009292603}
+2025-04-27 22:16:58,409 - __main__ - INFO - Intent classification model loaded successfully!
+2025-04-27 22:16:58,409 - __main__ - INFO - Loading recommender model...
+2025-04-27 22:16:58,409 - __main__ - INFO - Loaded configuration: model_name=all-mpnet-base-v2
+2025-04-27 22:16:58,425 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-04-27 22:16:58,440 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: recommender_model\sentence_transformer
