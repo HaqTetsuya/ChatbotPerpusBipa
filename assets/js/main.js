@@ -121,31 +121,37 @@ $(document).ready(function() {
             url: `${baseUrl}${activeController}/send`,
             type: 'POST',
             contentType: 'application/json',
-            data: JSON.stringify({ message: message }),
+            data: JSON.stringify({ message: message, wait_confirmation: wait_confirmation }),
             dataType: 'json',
             xhrFields: {
                 withCredentials: true
             },
             success: function(response) {
-                $('#typing-indicator').remove();
-                $('#chat-container').append(`
-                    <div class="flex items-start space-x-2 message-container">
-                        <div class="w-10 h-10 rounded-full border-2 border-black flex-shrink-0"></div>
-                        <div class="bg-white p-3 rounded-lg border-2 border-black">
-                            <p class="font-bold">ChatBot</p>
-                            <div>${response.response}</div>
-                            <div class="timestamp">${timestamp}</div>
-                        </div>
-                    </div>
-                `);
-                scrollToBottom();
+				$('#typing-indicator').remove();
+				$('#chat-container').append(`
+					<div class="flex items-start space-x-2 message-container">
+						<div class="w-10 h-10 rounded-full border-2 border-black flex-shrink-0"></div>
+						<div class="bg-white p-3 rounded-lg border-2 border-black">
+							<p class="font-bold">ChatBot</p>
+							<div>${response.response}</div>
+							<div class="timestamp">${timestamp}</div>
+						</div>
+					</div>
+				`);
+				scrollToBottom();
 
-                if (response.next_action && response.next_action === 'wait_book_recommendation') {
-                    waitingForRecommendation = true;
-                }else if(wait_confirmation && response.next_action && response.next_action === 'confirmation'){
+				if (response.next_action && response.next_action === 'wait_book_recommendation') {
 					waitingForRecommendation = true;
+					wait_confirmation = false;   // entering recommendation
+				} else if (response.next_action && response.next_action === 'confirmation') {
+					waitingForRecommendation = true;
+					// wait_confirmation stays true
+				} else {
+					// No special next_action
+					waitingForRecommendation = false;
+					wait_confirmation = false;   // reset after everything
 				}
-            },
+			},
             error: function(xhr, status, error) {
                 $('#typing-indicator').remove();
                 $('#chat-container').append(`

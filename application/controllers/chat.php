@@ -65,8 +65,8 @@ class chat extends CI_Controller
                 $intent = strtolower($responseData['intent']); // Ensure lowercase matching
                 $confidence = $responseData['confidence'] ?? 0;
                 error_log("Intent received: $intent, Confidence: $confidence");
-				$bot_output = get_bot_response($intent);
-
+				$bot_output = get_bot_response($intent, $data);
+				
 				$response_text = $bot_output['response'];
 				$next_action = isset($bot_output['next_action']) ? $bot_output['next_action'] : null;
 

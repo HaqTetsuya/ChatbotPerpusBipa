@@ -1,7 +1,3 @@
-<s>
-<pad>
-</s>
-<unk>
 [PAD]
 [unused0]
 [unused1]
@@ -30524,4 +30520,3 @@ necessitated
 ##：
 ##？
 ##～
-<mask>

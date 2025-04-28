@@ -44,7 +44,7 @@ intent_classes = None
 intent_thresholds = None
 
 class BookRecommender:
-    def __init__(self, model_name='all-mpnet-base-v2'):
+    def __init__(self, model_name='all-minilm-l6-v2'):
         """Initialize the book recommender with specified model."""
         self.model_name = model_name
         self.model = None

@@ -49,12 +49,23 @@ if (!function_exists('get_bot_response')) {
                     'next_action' => 'wait_book_recommendation'
                 ];
 
-            case 'confirm':
-                return [
-                    'response' => '<p><strong>Baik, terima kasih!</strong> Permintaan Anda telah dikonfirmasi. ✅</p>',
-					'next_action' => 'confirmation'
-                ];
-
+            case 'confirm':			
+				$waitConfirmation = $data['wait_confirmation'] ?? false; 
+				if ($waitConfirmation) {
+					return [
+						'response' => '
+							<p><strong>Pencarian Buku:</strong><br>
+							Silakan ketikkan judul atau pengarang buku yang Anda cari.<br>
+							<em>Contoh:</em> cari buku pemrograman Python</p>',
+						'next_action' => 'confirmation'
+					];
+				} else {
+					return [												
+						'response' => '<p><strong>Baik, terima kasih!</strong> Permintaan Anda telah dikonfirmasi. ?</p>',						
+					];
+				}
+							
+                
             case 'denied':
                 return [
                     'response' => '<p><strong>Permintaan dibatalkan.</strong> Jika butuh bantuan lain, silakan sampaikan. ❌</p>'
