@@ -1,0 +1,936 @@
+{
+    "id_synonyms": {
+        "saya": [
+            "aku",
+            "gue",
+            "gua",
+            "hamba",
+            "beta"
+        ],
+        "kamu": [
+            "anda",
+            "engkau",
+            "kalian",
+            "elu",
+            "dikau"
+        ],
+        "hai": [
+            "halo",
+            "hello",
+            "hi",
+            "hey",
+            "hola"
+        ],
+        "selamat": [
+            "slamat",
+            "met",
+            "congratz"
+        ],
+        "pagi": [
+            "morning",
+            "subuh"
+        ],
+        "siang": [
+            "dzuhur",
+            "sore"
+        ],
+        "malam": [
+            "malem",
+            "night"
+        ],
+        "tidak": [
+            "tak",
+            "tiada",
+            "bukan",
+            "enggak",
+            "nggak",
+            "gak",
+            "kagak"
+        ],
+        "iya": [
+            "ya",
+            "yoi",
+            "yup",
+            "yo",
+            "oke",
+            "ok",
+            "betul"
+        ],
+        "bagaimana": [
+            "gimana",
+            "bagaimane",
+            "gmn",
+            "bgmn"
+        ],
+        "mengapa": [
+            "kenapa",
+            "knp",
+            "knapa",
+            "ngapa"
+        ],
+        "karena": [
+            "sebab",
+            "lantaran",
+            "gara-gara"
+        ],
+        "sangat": [
+            "banget",
+            "amat",
+            "sekali",
+            "sungguh"
+        ],
+        "bisa": [
+            "dapat",
+            "mampu",
+            "sanggup"
+        ],
+        "mungkin": [
+            "barangkali",
+            "kali",
+            "kayaknya",
+            "kayanya"
+        ],
+        "terima kasih": [
+            "makasih",
+            "tks",
+            "thx",
+            "thanks",
+            "tengkyu",
+            "tengkiu"
+        ],
+        "tolong": [
+            "bantu",
+            "bantuin",
+            "tlg",
+            "help"
+        ],
+        "mau": [
+            "ingin",
+            "pengen",
+            "berkenan"
+        ],
+        "pergi": [
+            "berangkat",
+            "cabut",
+            "start",
+            "jalan"
+        ],
+        "lihat": [
+            "tengok",
+            "liat",
+            "ngeliat",
+            "mantau"
+        ],
+        "cari": [
+            "mencari",
+            "nyari",
+            "telusuri"
+        ]
+    },
+    "common_slang": {
+        "tidak": "gak",
+        "iya": "yoi",
+        "terima kasih": "makasih",
+        "saya": "gw",
+        "kamu": "lo",
+        "sedang": "lagi",
+        "bagaimana": "gimana",
+        "begitu": "gitu",
+        "bisa": "bsa",
+        "akan": "bakal",
+        "untuk": "buat",
+        "tahu": "tau",
+        "apakah": "apa",
+        "mengapa": "kenapa",
+        "selamat": "selamet",
+        "dengan": "dgn",
+        "sangat": "banget"
+    },
+    "intent_slang": {
+        "jam_layanan": {
+            "perpustakaan": "perpus",
+            "buka": "open",
+            "tutup": "close",
+            "sampai": "sampe",
+            "jam": "jm",
+            "informasi": "info",
+            "hari ini": "hr ini",
+            "kapan": "kpn",
+            "jadwal": "jdwl",
+            "operasional": "ops",
+            "layanan": "lyn",
+            "masih": "msih",
+            "minggu": "mg",
+            "hari": "hri",
+            "pukul": "pkl"
+        },
+        "cari_buku": {
+            "mencari": "nyari",
+            "mau mencari": "mau nyari",
+            "ingin mencari": "pengen nyari",
+            "tolong carikan": "cariin",
+            "tolong bantu cari": "bantuin cari",
+            "mencarikan": "cariin",
+            "buku": "book",
+            "butuh": "need",
+            "melihat": "liat",
+            "daftar": "list",
+            "akses": "akses",
+            "temukan": "nemu",
+            "mencoba": "nyoba",
+            "mengakses": "akses",
+            "gunakan": "make use",
+            "fitur": "fitr",
+            "pencarian": "search",
+            "referensi": "ref",
+            "bantuan": "bntuan",
+            "dimana": "dmn",
+            "cek": "check",
+            "lihat-lihat": "liat2",
+            "cari": "search",
+            "mencari buku": "nyari book"
+        },
+        "greeting": {
+            "halo": "haloo",
+            "hai": "hay",
+            "hello": "helo",
+            "selamat pagi": "slmt pagi",
+            "selamat siang": "slmt siang",
+            "selamat sore": "slmt sore",
+            "selamat malam": "slmt malam",
+            "apa kabar": "apa kbr",
+            "assalamualaikum": "asswrwb",
+            "permisi": "permizz",
+            "hai bot": "hey bot",
+            "bot": "bt",
+            "selamat datang": "slmt dtg",
+            "halo selamat pagi": "hai morning",
+            "hai selamat siang": "helo siang",
+            "met pagi": "morning",
+            "pagi": "pgi",
+            "siang": "siang boss",
+            "nigga": "nigger"
+        },
+        "goodbye": {
+            "terima kasih": "makasih",
+            "goodbye": "gudbai",
+            "makasih": "mksh",
+            "makasih ya": "thx ya",
+            "sampai jumpa": "sampe jmpa",
+            "dadah": "daah",
+            "bye": "byee",
+            "sampai nanti": "sampe ntar",
+            "see you": "cu",
+            "thanks": "thx",
+            "thank you": "tq",
+            "sekian": "skian",
+            "itu saja": "itu aj",
+            "ok makasih": "ok thx",
+            "terima kasih banyak": "thanks banget",
+            "makasih atas bantuannya": "thx for helping",
+            "sampai bertemu lagi": "see u later",
+            "selamat tinggal": "bye bye"
+        },
+        "confirm": {
+            "betul": "btl",
+            "setuju": "stju",
+            "bener": "bnr",
+            "iya benar": "ya bnr",
+            "okey": "okeyy",
+            "ok deh": "okedeh",
+            "tentu saja": "tentu",
+            "saya setuju": "aku setuju",
+            "benar sekali": "bener banget",
+            "ya betul": "yup betul",
+            "tentu boleh": "boleh dong",
+            "setuju sekali": "sangat setuju"
+        },
+        "denied": {
+            "tidak mau": "gak mau",
+            "ga mau": "gk mw",
+            "tidak setuju": "gak setuju",
+            "saya tidak": "aku ga",
+            "nggak perlu": "ga perlu",
+            "ga usah": "rasah",
+            "tidak perlu": "gak usah",
+            "no": "nope",
+            "saya tidak setuju": "aku gak setuju",
+            "tidak bisa": "ga bisa",
+            "tidak boleh": "gak boleh",
+            "jangan": "jgn",
+            "maaf tidak": "sorry no",
+            "tidak begitu": "gak gitu"
+        },
+        "keanggotaan": {
+            "anggota": "anggta",
+            "keanggotaan": "member",
+            "daftar": "dftr",
+            "pendaftaran": "daftarin",
+            "syarat": "req",
+            "jadi anggota": "jd member",
+            "mendaftar": "daftar",
+            "mahasiswa": "mhs",
+            "kampus": "uni",
+            "kartu mahasiswa": "ktm",
+            "aktif": "aktif",
+            "foto": "poto",
+            "pas foto": "pasfoto",
+            "perpustakaan": "perpus",
+            "bisa jadi anggota": "bs jd member",
+            "boleh daftar": "boleh gabung",
+            "bawa apa": "bwa apa",
+            "tunjukin apa": "tunjuk apa",
+            "masuk perpustakaan": "akses perpus",
+            "pakai fasilitas": "gunain fasilitas",
+            "kampus lain": "dari luar",
+            "dari luar": "bukan bina patria",
+            "akses fasilitas": "pakai fasilitas",
+            "pakai perpus": "akses perpus",
+            "baca di tempat": "bca di tmpt",
+            "bisa baca": "bs bca",
+            "pinjam buku": "minjem book",
+            "mahasiswa luar": "mhs luar",
+            "harus bawa": "hrus bwa"
+        },
+        "fasilitas": {
+            "fasilitas": "fasil",
+            "layanan": "lyn",
+            "perpustakaan": "perpus",
+            "penelusuran": "cari",
+            "literatur": "lit",
+            "skripsi": "skrip",
+            "jurnal": "jrnl",
+            "laporan": "lprn",
+            "pkl": "magang",
+            "fotokopi": "fotcopy",
+            "fotocopy": "fc",
+            "koleksi": "koleksi",
+            "ruang": "room",
+            "baca": "read",
+            "ruang baca": "reading room",
+            "locker": "loker",
+            "tas": "bag",
+            "jaket": "jkt",
+            "penitipan": "nitip",
+            "internet": "inet",
+            "wifi": "wi-fi",
+            "komputer": "pc",
+            "printer": "print",
+            "scanning": "scan",
+            "fasilitas apa saja": "fasil apa aja",
+            "apa saja fasilitas": "apa aja fasil",
+            "fasilitas yang ada": "fasil yg ada",
+            "fasilitas tersedia": "fasil tersedia",
+            "ada fasilitas": "ada fasil",
+            "punya fasilitas": "punya fasil",
+            "bisa pakai": "bs pake",
+            "tersedia": "ada",
+            "ruangan": "room",
+            "diskusi": "diskus",
+            "ruang diskusi": "ruang diskus",
+            "layanan apa": "lyn apa",
+            "apa saja layanan": "apa aja lyn",
+            "referensi": "ref",
+            "dimana": "dmn",
+            "lokasi": "lokasi",
+            "tempat": "tmpt",
+            "lantai": "lt",
+            "multimedia": "mm",
+            "penelitian": "riset",
+            "riset": "research"
+        }
+    },
+    "phonetic_dict": {
+        "saya": [
+            "sy",
+            "saia",
+            "ane",
+            "ana",
+            "w",
+            "gw",
+            "q",
+            "aq"
+        ],
+        "kamu": [
+            "km",
+            "kamyu",
+            "u",
+            "lo",
+            "lu",
+            "l",
+            "ngana",
+            "sampeyan",
+            "antum",
+            "ente"
+        ],
+        "halo": [
+            "hlo",
+            "hallo",
+            "helo",
+            "haloo",
+            "hellow",
+            "hy",
+            "hyy",
+            "p",
+            "ping"
+        ],
+        "selamat": [
+            "slmt",
+            "slamat",
+            "met",
+            "slam"
+        ],
+        "pagi": [
+            "pgi",
+            "morning",
+            "pg",
+            "subuh"
+        ],
+        "siang": [
+            "siang",
+            "afternoon",
+            "siank",
+            "siyang"
+        ],
+        "malam": [
+            "mlm",
+            "malem",
+            "mlem",
+            "night",
+            "evening",
+            "mlem",
+            "mlm"
+        ],
+        "apa": [
+            "ap",
+            "ape",
+            "apah",
+            "pa"
+        ],
+        "kabar": [
+            "kbr",
+            "kabare",
+            "kbar",
+            "kabbar"
+        ],
+        "gimana": [
+            "gmn",
+            "bgmn",
+            "gmana",
+            "gimane",
+            "gmn"
+        ],
+        "sampai": [
+            "smp",
+            "sampe",
+            "smpe",
+            "smpei",
+            "sampeyan"
+        ],
+        "jumpa": [
+            "jpa",
+            "jmpa",
+            "ktmu",
+            "jumpe"
+        ],
+        "dadah": [
+            "byebye",
+            "bye",
+            "bay",
+            "byee",
+            "bbye",
+            "bye2",
+            "dadah"
+        ],
+        "pamit": [
+            "pmt",
+            "pamitt",
+            "off",
+            "out",
+            "cabut",
+            "cbut"
+        ],
+        "tinggal": [
+            "tgl",
+            "tnggal",
+            "tinggel",
+            "tggal",
+            "tinggelin"
+        ],
+        "duluan": [
+            "dlu",
+            "duluan",
+            "dluan",
+            "dluan ya",
+            "ahead"
+        ],
+        "pergi": [
+            "pgi",
+            "pegi",
+            "prgi",
+            "out",
+            "keluar"
+        ],
+        "pulang": [
+            "plg",
+            "plng",
+            "balik",
+            "blk",
+            "mudik"
+        ],
+        "ya": [
+            "y",
+            "yah",
+            "iye",
+            "yoi",
+            "yups",
+            "yes",
+            "yess",
+            "yesss",
+            "okey",
+            "okeh",
+            "oks"
+        ],
+        "setuju": [
+            "stju",
+            "acc",
+            "accept",
+            "approved",
+            "approve",
+            "deal",
+            "oke",
+            "ok",
+            "sip"
+        ],
+        "benar": [
+            "bnr",
+            "bner",
+            "bener",
+            "bnr",
+            "yoi",
+            "correct"
+        ],
+        "sudah": [
+            "sdh",
+            "dah",
+            "udh",
+            "done",
+            "wes",
+            "uwes",
+            "udah",
+            "sdah"
+        ],
+        "bisa": [
+            "bs",
+            "bsa",
+            "biza",
+            "bsa",
+            "biza",
+            "ok"
+        ],
+        "pasti": [
+            "pst",
+            "psti",
+            "pastii",
+            "sure",
+            "certain"
+        ],
+        "siap": [
+            "sp",
+            "ready",
+            "sip",
+            "sp",
+            "roger",
+            "on",
+            "online"
+        ],
+        "jadi": [
+            "jd",
+            "jdi",
+            "jdnya",
+            "jdiin",
+            "proceed"
+        ],
+        "lanjut": [
+            "lnjt",
+            "lanjt",
+            "next",
+            "go"
+        ],
+        "mantap": [
+            "mntap",
+            "mantab",
+            "mntb",
+            "top",
+            "mantul",
+            "josss",
+            "kerennn"
+        ],
+        "bagus": [
+            "bgs",
+            "bgus",
+            "nice",
+            "naiss",
+            "keren",
+            "top"
+        ],
+        "tidak": [
+            "tdk",
+            "gak",
+            "ga",
+            "g",
+            "nggak",
+            "ngga",
+            "nope",
+            "no",
+            "kagak",
+            "kaga",
+            "kgk"
+        ],
+        "jangan": [
+            "jgn",
+            "jngn",
+            "don't",
+            "dont",
+            "jgn",
+            "ga usah",
+            "tdk usah",
+            "gausa",
+            "gausah"
+        ],
+        "belum": [
+            "blm",
+            "blom",
+            "belom",
+            "not yet",
+            "durung",
+            "durong",
+            "belm"
+        ],
+        "batal": [
+            "btl",
+            "cancel",
+            "cansel",
+            "urungkan",
+            "batalin",
+            "gajadi"
+        ],
+        "maaf": [
+            "sorry",
+            "sori",
+            "maf",
+            "maap",
+            "maaaaf",
+            "mrff",
+            "sry",
+            "srry"
+        ],
+        "menolak": [
+            "tlk",
+            "reject",
+            "decline",
+            "dtolak",
+            "nolak",
+            "gak mau",
+            "gamau"
+        ],
+        "mustahil": [
+            "impossible",
+            "ga mungkin",
+            "g mungkin",
+            "tdk mungkin",
+            "gak bs"
+        ],
+        "salah": [
+            "slh",
+            "wrong",
+            "error",
+            "eror",
+            "salh",
+            "fail"
+        ],
+        "gagal": [
+            "ggl",
+            "fail",
+            "failed",
+            "error",
+            "gagak",
+            "failll"
+        ],
+        "terima": [
+            "trma",
+            "thanks",
+            "thx",
+            "trims",
+            "tq",
+            "tyvm",
+            "makasih",
+            "mksih"
+        ],
+        "kasih": [
+            "ksh",
+            "ksih",
+            "thx",
+            "makasih",
+            "mksih",
+            "thanks"
+        ],
+        "tolong": [
+            "tlng",
+            "help",
+            "tlg",
+            "tulung",
+            "bantu",
+            "bantuin"
+        ],
+        "please": [
+            "plz",
+            "plis",
+            "pliss",
+            "plisss",
+            "pliissss",
+            "tolong"
+        ],
+        "besok": [
+            "bsk",
+            "bsok",
+            "besok",
+            "tmrw",
+            "esok",
+            "besuk"
+        ],
+        "waktu": [
+            "wkt",
+            "waktu",
+            "time",
+            "tm",
+            "jam"
+        ],
+        "cukup": [
+            "ckp",
+            "enough",
+            "cukuppp",
+            "cukups",
+            "ckup"
+        ],
+        "melihat": [
+            "lihat",
+            "liat",
+            "look",
+            "see",
+            "watching",
+            "ngeliat"
+        ],
+        "alasan": [
+            "alsan",
+            "reason",
+            "why",
+            "alesan",
+            "alsn"
+        ],
+        "untuk": [
+            "utk",
+            "buat",
+            "bwt",
+            "4",
+            "tuk",
+            "2",
+            "to"
+        ],
+        "melakukan": [
+            "lakukan",
+            "do",
+            "lakuin",
+            "melakuin",
+            "ngerjain"
+        ],
+        "ini": [
+            "ni",
+            "this",
+            "these",
+            "iki",
+            "nih",
+            "ne"
+        ],
+        "kita": [
+            "kta",
+            "we",
+            "us",
+            "w",
+            "kt"
+        ],
+        "hari": [
+            "hr",
+            "day",
+            "hri",
+            "days",
+            "dayy",
+            "harii"
+        ],
+        "bro": [
+            "broh",
+            "brow",
+            "brother",
+            "mas",
+            "bang",
+            "bor",
+            "omm"
+        ],
+        "sis": [
+            "sist",
+            "sister",
+            "mbak",
+            "mba",
+            "nte",
+            "ceu",
+            "teh"
+        ],
+        "fasilitas": [
+            "fasil",
+            "fasilit",
+            "fasl",
+            "fasility",
+            "facility",
+            "facilities"
+        ],
+        "penelusuran": [
+            "cari",
+            "telusur",
+            "search",
+            "browsing",
+            "browse"
+        ],
+        "literatur": [
+            "lit",
+            "literature",
+            "bacaan",
+            "bahan",
+            "referensi",
+            "ref"
+        ],
+        "skripsi": [
+            "skrip",
+            "thesis",
+            "tugas akhir",
+            "ta",
+            "karya ilmiah"
+        ],
+        "jurnal": [
+            "jrnl",
+            "journal",
+            "paper",
+            "artikel ilmiah",
+            "artikel"
+        ],
+        "laporan": [
+            "lprn",
+            "report",
+            "repot",
+            "lapor",
+            "dokumen"
+        ],
+        "fotokopi": [
+            "fc",
+            "fotcopy",
+            "fotocopy",
+            "copy",
+            "foto copy",
+            "duplikat"
+        ],
+        "koleksi": [
+            "koleksi",
+            "collection",
+            "bahan",
+            "buku",
+            "dokumen"
+        ],
+        "ruang": [
+            "ruangan",
+            "room",
+            "space",
+            "tempat",
+            "area"
+        ],
+        "baca": [
+            "reading",
+            "bca",
+            "membaca",
+            "belajar",
+            "studi"
+        ],
+        "locker": [
+            "loker",
+            "lemari",
+            "cabinet",
+            "penyimpanan",
+            "storage"
+        ],
+        "internet": [
+            "inet",
+            "net",
+            "web",
+            "online",
+            "jaringan",
+            "wifi",
+            "wi-fi"
+        ]
+    },
+    "protected_intent_words": {
+        "jam_layanan": [
+            "bipa",
+            "bina patria"
+        ],
+        "cari_buku": [
+            "judul",
+            "penulis",
+            "isbn",
+            "kategori",
+            "bipa",
+            "bina patria"
+        ],
+        "greeting": [
+            "selamat"
+        ],
+        "goodbye": [
+            "selamat"
+        ],
+        "confirm": [
+            "iya",
+            "betul",
+            "benar",
+            "setuju"
+        ],
+        "denied": [
+            "tidak",
+            "bukan",
+            "salah",
+            "jangan"
+        ],
+        "keanggotaan": [
+            "anggota",
+            "daftar",
+            "syarat",
+            "mahasiswa",
+            "kampus",
+            "kartu mahasiswa",
+            "bipa",
+            "bina patria"
+        ],
+        "fasilitas": [
+            "fasilitas",
+            "perpustakaan",
+            "literatur",
+            "skripsi",
+            "jurnal",
+            "laporan",
+            "pkl",
+            "locker",
+            "internet",
+            "wifi",
+            "ruang diskusi",
+            "referensi",
+            "bipa",
+            "bina patria"
+        ]
+    }
+}
