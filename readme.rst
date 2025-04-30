@@ -88,7 +88,3 @@ License
 This project is licensed under the MIT License. See the ``LICENSE`` file for more details.
 
 ---
-
-SEMENTARA
--------
-https://drive.google.com/drive/folders/1O5invCEiVLuQQHBDlQy1gzZpgg5ZcHrj?usp=sharing
