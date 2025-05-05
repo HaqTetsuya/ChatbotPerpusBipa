@@ -79,7 +79,7 @@ Usage
 
 1. Start the web server to launch the chatbot interface.
 2. Load the trained model into the chatbot system.
-3. Access the chatbot via your browser (e.g., ``http://localhost/ChatbotPerpusBipa/chat4``).
+3. Access the chatbot via your browser (e.g., ``http://localhost/ChatbotPerpusBipa/chat``).
 
 ---
 
