@@ -9,7 +9,7 @@
 
 
 modelnya belum jadi
-
+jadi train model classification dan book recomendationya
 
 
 ChatbotPerpusBipa
