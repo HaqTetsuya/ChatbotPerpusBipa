@@ -1,42 +1,54 @@
 {
     "id_synonyms": {
-        "saya": [
-            "aku",
-            "gue",
-            "gua",
-            "hamba",
-            "beta"
+        "nigga": [
+            "nigger",
+            "hitam",
+            "negro",
+            "niger"
         ],
-        "kamu": [
-            "anda",
-            "engkau",
-            "kalian",
-            "elu",
-            "dikau"
+        "sampai jumpa": [
+            "dadah",
+            "bye",
+            "see you",
+            "sampai nanti",
+            "sampai bertemu lagi",
+            "daa",
+            "adios"
         ],
-        "hai": [
-            "halo",
-            "hello",
-            "hi",
-            "hey",
-            "hola"
+        "pergi": [
+            "cabut",
+            "berangkat",
+            "angkat kaki",
+            "pamit",
+            "jalan"
         ],
-        "selamat": [
-            "slamat",
-            "met",
-            "congratz"
+        "selamat tinggal": [
+            "goodbye",
+            "babai",
+            "ciao"
         ],
-        "pagi": [
-            "morning",
-            "subuh"
+        "iya": [
+            "ya",
+            "yoi",
+            "yup",
+            "yo",
+            "oke",
+            "ok",
+            "betul",
+            "benar",
+            "bener",
+            "setuju"
         ],
-        "siang": [
-            "dzuhur",
-            "sore"
+        "pasti": [
+            "tentu",
+            "jelas",
+            "pastinya",
+            "sudah pasti"
         ],
-        "malam": [
-            "malem",
-            "night"
+        "benar": [
+            "beneran",
+            "bener",
+            "emang"
         ],
         "tidak": [
             "tak",
@@ -47,84 +59,145 @@
             "gak",
             "kagak"
         ],
-        "iya": [
-            "ya",
-            "yoi",
-            "yup",
-            "yo",
-            "oke",
-            "ok",
-            "betul"
+        "tidak mau": [
+            "nggak mau",
+            "gak mau",
+            "enggan",
+            "tidak ingin",
+            "males"
         ],
-        "bagaimana": [
-            "gimana",
-            "bagaimane",
-            "gmn",
-            "bgmn"
+        "salah": [
+            "keliru",
+            "tidak benar",
+            "ngaco"
         ],
-        "mengapa": [
-            "kenapa",
-            "knp",
-            "knapa",
-            "ngapa"
+        "jam": [
+            "pukul",
+            "waktu"
         ],
-        "karena": [
-            "sebab",
-            "lantaran",
-            "gara-gara"
+        "buka": [
+            "operasional",
+            "aktif",
+            "mulai buka",
+            "tersedia"
         ],
-        "sangat": [
-            "banget",
-            "amat",
-            "sekali",
-            "sungguh"
+        "perpustakaan": [
+            "perpus",
+            "library",
+            "tempat buku"
         ],
-        "bisa": [
-            "dapat",
-            "mampu",
-            "sanggup"
+        "hari ini": [
+            "sekarang",
+            "hari ini juga",
+            "kini"
         ],
-        "mungkin": [
-            "barangkali",
-            "kali",
-            "kayaknya",
-            "kayanya"
-        ],
-        "terima kasih": [
-            "makasih",
-            "tks",
-            "thx",
-            "thanks",
-            "tengkyu",
-            "tengkiu"
-        ],
-        "tolong": [
-            "bantu",
-            "bantuin",
-            "tlg",
-            "help"
-        ],
-        "mau": [
-            "ingin",
-            "pengen",
-            "berkenan"
-        ],
-        "pergi": [
-            "berangkat",
-            "cabut",
-            "start",
-            "jalan"
-        ],
-        "lihat": [
-            "tengok",
-            "liat",
-            "ngeliat",
-            "mantau"
+        "jadwal": [
+            "schedule",
+            "waktu buka",
+            "timetable"
         ],
         "cari": [
             "mencari",
             "nyari",
-            "telusuri"
+            "telusuri",
+            "nemuin"
+        ],
+        "buku": [
+            "bacaan",
+            "kitab",
+            "literatur"
+        ],
+        "judul": [
+            "title",
+            "nama buku"
+        ],
+        "pengarang": [
+            "penulis",
+            "author",
+            "penyusun"
+        ],
+        "kategori": [
+            "genre",
+            "jenis",
+            "topik",
+            "tema"
+        ],
+        "dimana": [
+            "di mana",
+            "lokasi",
+            "letak"
+        ],
+        "anggota": [
+            "member",
+            "pengguna",
+            "user"
+        ],
+        "daftar": [
+            "registrasi",
+            "pendaftaran",
+            "gabung",
+            "ikut"
+        ],
+        "bergabung": [
+            "join",
+            "ikut serta",
+            "masuk"
+        ],
+        "biaya": [
+            "bayaran",
+            "harga",
+            "uang"
+        ],
+        "syarat": [
+            "ketentuan",
+            "aturan",
+            "persyaratan"
+        ],
+        "fasilitas": [
+            "sarana",
+            "layanan",
+            "fitur",
+            "kemudahan"
+        ],
+        "apa saja": [
+            "apa aja",
+            "apa yang tersedia",
+            "ada apa aja"
+        ],
+        "tersedia": [
+            "ada",
+            "disediakan",
+            "dapat digunakan"
+        ],
+        "ruangan": [
+            "tempat",
+            "area",
+            "kamar",
+            "space"
+        ],
+        "komputer": [
+            "PC",
+            "laptop",
+            "mesin",
+            "alat"
+        ],
+        "wifi": [
+            "internet",
+            "akses wifi",
+            "jaringan",
+            "hotspot"
+        ],
+        "pinjam": [
+            "pinjem",
+            "minjem",
+            "meminjam",
+            "meminjem"
+        ],
+        "cara": [
+            "ketentuan",
+            "prosedur",
+            "aturan",
+            "caranya"
         ]
     },
     "common_slang": {
@@ -293,8 +366,6 @@
             "harus bawa": "hrus bwa"
         },
         "fasilitas": {
-            "fasilitas": "fasil",
-            "layanan": "lyn",
             "perpustakaan": "perpus",
             "penelusuran": "cari",
             "literatur": "lit",
@@ -338,6 +409,23 @@
             "multimedia": "mm",
             "penelitian": "riset",
             "riset": "research"
+        },
+        "cara_pinjam": {
+            "pinjam": "minjem",
+            "meminjam": "minjem",
+            "buku": "bku",
+            "perpustakaan": "perpus",
+            "cara": "gmn",
+            "bagaimana": "gmna",
+            "peminjaman": "minjem",
+            "mengambil": "ngambil",
+            "pengambilan": "ngambil",
+            "prosedur": "prosedurnya",
+            "aturan": "rule",
+            "sistem": "sistim",
+            "ngembaliin": "balikin",
+            "kembali": "balikin",
+            "pengembalian": "balikin"
         }
     },
     "phonetic_dict": {
@@ -873,6 +961,81 @@
             "jaringan",
             "wifi",
             "wi-fi"
+        ],
+        "pinjam": [
+            "minjem",
+            "mimjem",
+            "mnjm",
+            "pinjam",
+            "meminjam",
+            "nyewa"
+        ],
+        "buku": [
+            "bku",
+            "buk",
+            "book",
+            "books",
+            "bukuu",
+            "bkoo"
+        ],
+        "perpustakaan": [
+            "perpus",
+            "library",
+            "lib",
+            "pustaka",
+            "perpust"
+        ],
+        "pengembalian": [
+            "balikin",
+            "ngembaliin",
+            "ngembalikan",
+            "kembaliin",
+            "return"
+        ],
+        "mengembalikan": [
+            "balikin",
+            "ngembaliin",
+            "kembali",
+            "ngembali"
+        ],
+        "mengambil": [
+            "ngambil",
+            "ngmbl",
+            "ambil",
+            "mengmbil"
+        ],
+        "pengambilan": [
+            "ngambil",
+            "pengmbilan",
+            "ambil",
+            "pick up"
+        ],
+        "aturan": [
+            "rule",
+            "peraturan",
+            "aturan2",
+            "aturan-aturan"
+        ],
+        "prosedur": [
+            "prosedurnya",
+            "langkah",
+            "step",
+            "alur",
+            "tahapan"
+        ],
+        "cara": [
+            "gmn",
+            "gmna",
+            "gimana",
+            "cmna",
+            "how",
+            "caranya"
+        ],
+        "sistem": [
+            "sistim",
+            "system",
+            "sisem",
+            "systm"
         ]
     },
     "protected_intent_words": {
@@ -889,46 +1052,33 @@
             "bina patria"
         ],
         "greeting": [
-            "selamat"
+            "anjing"
         ],
         "goodbye": [
-            "selamat"
+            "anjing"
         ],
         "confirm": [
-            "iya",
-            "betul",
-            "benar",
-            "setuju"
+            "anjing"
         ],
         "denied": [
-            "tidak",
-            "bukan",
-            "salah",
-            "jangan"
+            "anjing"
         ],
         "keanggotaan": [
-            "anggota",
-            "daftar",
-            "syarat",
-            "mahasiswa",
-            "kampus",
             "kartu mahasiswa",
             "bipa",
             "bina patria"
         ],
         "fasilitas": [
-            "fasilitas",
-            "perpustakaan",
-            "literatur",
             "skripsi",
-            "jurnal",
             "laporan",
             "pkl",
             "locker",
-            "internet",
-            "wifi",
             "ruang diskusi",
             "referensi",
+            "bipa",
+            "bina patria"
+        ],
+        "cara_pinjam": [
             "bipa",
             "bina patria"
         ]
