@@ -1,8 +1,11 @@
 1. Classification model
+
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/HaqTetsuya/ChatbotPerpusBipa/blob/main/IndobertPerpusChatbot.ipynb
    :alt: Classification Model Training
+
 2. Book Recomendation
+
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/HaqTetsuya/ChatbotPerpusBipa/blob/main/BookRecomendation.ipynb
    :alt: Book Recommendation Model Training
