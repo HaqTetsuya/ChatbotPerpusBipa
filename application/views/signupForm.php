@@ -20,12 +20,21 @@
 
 <body class="bg-white h-screen flex items-center justify-center">
     <div class="bg-white w-full max-w-md rounded-lg shadow-lg p-8 flex flex-col border-2 border-black mt-12">
+		<?php if ($this->session->flashdata('errors')): ?>
+			<ul>
+				<?php foreach ($this->session->flashdata('errors') as $field => $error): ?>
+					<li><strong><?= ucfirst($field) ?>:</strong> <?= $error ?></li>
+				<?php endforeach; ?>
+			</ul>
+		<?php endif; ?>
+
         <div class="flex flex-col items-center mb-8">
             <div class="w-24 h-24 border-2 border-black rounded-full mb-4 flex items-center justify-center">
                 <i class="fas fa-user-plus text-4xl"></i>
             </div>
             <h1 class="text-3xl font-bold">Sign Up</h1>
         </div>
+		
         <form action="<?php echo base_url('auth/aksiSign') ?>" id="signup-form" class="flex flex-col space-y-4" method="POST">
             <div class="flex flex-col">
                 <label for="email" class="mb-1 font-bold">Email</label>

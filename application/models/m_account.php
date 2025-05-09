@@ -14,11 +14,11 @@ class M_account extends CI_Model
     {
         return $this->db->get($table);
     }
-    function insert_data($table, $data)
-    {
-        return $this->db->insert($table, $data);
-		
-    }
+    public function insert_user($data)
+	{
+		return $this->db->insert('users', $data); // Replace 'users' with your actual table name
+	}
+
     function edit_data($table, $where)
     {
         return $this->db->get_where($table, $where);
