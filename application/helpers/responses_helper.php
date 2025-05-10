@@ -37,6 +37,21 @@ if (!function_exists('get_bot_response')) {
                         '</ol>' .
                         '<p>Setelah data diverifikasi, kartu anggota akan dikirimkan via email/diambil langsung. Kartu ini memungkinkan Anda meminjam buku fisik dan mengakses koleksi digital.</p>'
                 ];
+			
+			case 'fasilitas':
+				return [
+					'response' => 
+						'<p><strong> Daftar Fasilitas:</p></strong>'.
+						'<ol>' .
+						'<li>Peminjaman buku teks, 2 eksemplar selama 7 hari kerja, dengan denda keterlambatan 200 per hari per eksemplar</li>'.
+						'<li>Baca di tempat</li>'.
+						'<li>Penelusuran literatur</li>'.
+						'<li>Fotokopi koleksi</li>'.
+						'<li>Ruang baca</li>'.
+						'<li>Locker tas/jaket</li>'.
+						'</ol>' .
+						'<p>Bagi mahasiswa dari luar STMIK BINA PATRIA MAGELANG diperbolehkan memanfaatkan fasilitas perpustakaan, kecuali peminjaman buku. Syarat untuk memanfaatkan fasilitas adalah dengan menunjukkan kartu mahasiswa yang masih berlaku.</p>'			
+				];
 
             case 'cari_buku':
                 return [
@@ -46,6 +61,7 @@ if (!function_exists('get_bot_response')) {
                         '<em>Contoh:</em> cari buku "Pemrograman Python untuk Pemula"</p>',
                     'next_action' => 'wait_book_recommendation'
                 ];
+
 
             case 'confirm':
                 $waitConfirmation = $data['wait_confirmation'] ?? false;

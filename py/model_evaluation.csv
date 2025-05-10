@@ -9,3 +9,22 @@ timestamp,input_text,predicted_intent,is_ood,confidence,energy_score,detection_m
 2025-05-10 21:24:24,engga,denied,False,0.9793829321861267,-5.694575309753418,combined
 2025-05-10 21:24:36,kali ini gimana cara jadi anggota,keanggotaan,False,0.969345211982727,-5.170290470123291,combined
 2025-05-10 21:24:40,apakah gw anggota,keanggotaan,False,0.9429781436920166,-4.916390895843506,combined
+2025-05-10 21:28:41,apa iyah?,unknown,True,0.45867419242858887,-3.9028878211975098,combined
+2025-05-10 21:28:50,yaudah deh iya,confirm,False,0.9796836376190186,-5.57282018661499,combined
+2025-05-10 21:28:58,apa bedanya cari buku sama pinjam buku,cara_pinjam,False,0.9757035970687866,-5.527547836303711,combined
+2025-05-10 21:38:04,apa yang anda tahu tentang benda benda di perpustakaan?,fasilitas,False,0.9651476740837097,-5.238443851470947,combined
+2025-05-10 21:38:15,apa yang anda tahu tentang benda benda yang ada di perpustakaan?,fasilitas,False,0.9652040600776672,-5.183595657348633,combined
+2025-05-10 21:38:27,apa yang anda tahu tentang fasility yang ada di perpustakaan?,fasilitas,False,0.9813252687454224,-5.455287933349609,combined
+2025-05-10 21:38:41,apa yang anda tahu tentang fasilitas yang ada di perpustakaan?,fasilitas,False,0.9823843240737915,-5.4908366203308105,combined
+2025-05-10 21:38:51,fasilitas yang ada di perpustakaan?,fasilitas,False,0.9834970235824585,-5.454154968261719,combined
+2025-05-10 21:38:57,fasilitas?,unknown,True,0.6782468557357788,-3.97489857673645,combined
+2025-05-10 21:57:54,apa yang anda tahu tentang benda benda yang ada di perpustakaan?,fasilitas,False,0.9652040600776672,-5.183595657348633,combined
+2025-05-10 21:58:10,selamat pagi dan selamat malam dan selamat siang,greeting,False,0.8926397562026978,-3.95208740234375,combined
+2025-05-10 21:58:16,lo jawa,unknown,True,0.6581031084060669,-3.832792282104492,combined
+2025-05-10 21:58:33,Assalamualaikum wr wb,greeting,False,0.956558346748352,-5.079347133636475,combined
+2025-05-10 21:58:40,ass,greeting,False,0.9548842906951904,-5.077092170715332,combined
+2025-05-10 21:59:07,gausah kocak besok aja bye,goodbye,False,0.9574074745178223,-4.962672710418701,combined
+2025-05-10 21:59:11,gausah,denied,False,0.9818962812423706,-5.733990669250488,combined
+2025-05-10 21:59:21,aku datang besok,goodbye,False,0.935689389705658,-4.752419948577881,combined
+2025-05-10 21:59:29,aku akan tiba besok pagi,unknown,True,0.7373034358024597,-4.041408538818359,combined
+2025-05-10 22:02:09,cariin buku bang,cari_buku,False,0.9809244871139526,-5.464622974395752,combined
