@@ -48,3 +48,50 @@
 2025-05-10 21:04:44,086 - __main__ - INFO - =============================================
 
 2025-05-10 21:04:44,086 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 21:04:44] "POST /api/analyze HTTP/1.1" 200 -
+2025-05-10 21:10:56,497 - __main__ - INFO - 
+========== INTENT PREDICTION DEBUG ==========
+2025-05-10 21:10:56,498 - __main__ - INFO - Input Text: selamat pagi, saya inginn tau cara meminjam buku boleh? makasih
+2025-05-10 21:10:56,499 - __main__ - INFO - Detection Method: combined
+2025-05-10 21:10:58,421 - __main__ - INFO - Logits: [[5.399814605712891, 0.087623231112957, -0.8307769298553467, -0.6626364588737488, -0.7578122615814209, 0.10144484788179398, -0.7953941226005554, -0.3702244460582733, -1.1888351440429688]]
+2025-05-10 21:10:58,423 - __main__ - INFO - Softmax Probabilities: [[0.9776320457458496, 0.0048208096995949745, 0.001924260170198977, 0.002276598708704114, 0.0020699123851954937, 0.0048879035748541355, 0.0019935655873268843, 0.0030498558189719915, 0.0013451204868033528]]
+2025-05-10 21:10:58,424 - __main__ - INFO - Max Probability (Confidence): 0.9776
+2025-05-10 21:10:58,427 - __main__ - INFO - Predicted Index: 0
+2025-05-10 21:10:58,430 - __main__ - INFO - Energy Score: -5.4224
+2025-05-10 21:10:58,432 - __main__ - INFO - OOD Detection -> is_ood: False
+2025-05-10 21:10:58,437 - __main__ - INFO - Prediction marked as IN-DISTRIBUTION.
+2025-05-10 21:10:58,440 - __main__ - INFO - Predicted Intent: cara_pinjam
+2025-05-10 21:10:58,442 - __main__ - INFO - =============================================
+
+2025-05-10 21:10:58,449 - test - ERROR - Exception on /api/analyze [POST]
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\xampp\htdocs\ChatbotPerpusBipa\py\test.py", line 234, in analyze
+    save_prediction_to_csv(text, result, method)
+  File "C:\xampp\htdocs\ChatbotPerpusBipa\py\test.py", line 52, in save_prediction_to_csv
+    with open(EVAL_CSV, 'a', newline='') as f:
+PermissionError: [Errno 13] Permission denied: 'model_evaluation.csv'
+2025-05-10 21:11:03,159 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 21:11:03] "[35m[1mPOST /api/analyze HTTP/1.1[0m" 500 -
+2025-05-10 21:11:30,805 - __main__ - INFO - 
+========== INTENT PREDICTION DEBUG ==========
+2025-05-10 21:11:30,806 - __main__ - INFO - Input Text: selamat pagi, saya inginn tau cara meminjam buku boleh? makasih
+2025-05-10 21:11:30,807 - __main__ - INFO - Detection Method: combined
+2025-05-10 21:11:32,361 - __main__ - INFO - Logits: [[5.399814605712891, 0.087623231112957, -0.8307769298553467, -0.6626364588737488, -0.7578122615814209, 0.10144484788179398, -0.7953941226005554, -0.3702244460582733, -1.1888351440429688]]
+2025-05-10 21:11:32,365 - __main__ - INFO - Softmax Probabilities: [[0.9776320457458496, 0.0048208096995949745, 0.001924260170198977, 0.002276598708704114, 0.0020699123851954937, 0.0048879035748541355, 0.0019935655873268843, 0.0030498558189719915, 0.0013451204868033528]]
+2025-05-10 21:11:32,370 - __main__ - INFO - Max Probability (Confidence): 0.9776
+2025-05-10 21:11:32,373 - __main__ - INFO - Predicted Index: 0
+2025-05-10 21:11:32,379 - __main__ - INFO - Energy Score: -5.4224
+2025-05-10 21:11:32,387 - __main__ - INFO - OOD Detection -> is_ood: False
+2025-05-10 21:11:32,390 - __main__ - INFO - Prediction marked as IN-DISTRIBUTION.
+2025-05-10 21:11:32,393 - __main__ - INFO - Predicted Intent: cara_pinjam
+2025-05-10 21:11:32,397 - __main__ - INFO - =============================================
+
+2025-05-10 21:11:32,412 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 21:11:32] "POST /api/analyze HTTP/1.1" 200 -

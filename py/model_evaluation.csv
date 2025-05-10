@@ -1,3 +1,11 @@
 timestamp,input_text,predicted_intent,is_ood,confidence,energy_score,detection_method
 2025-05-10 21:04:44,hi,greeting,False,0.9614725708961487,-5.138956069946289,combined
 2025-05-10 21:11:32,"selamat pagi, saya inginn tau cara meminjam buku boleh? makasih",cara_pinjam,False,0.9776320457458496,-5.422436714172363,combined
+2025-05-10 21:20:07,hello nigga,greeting,False,0.9613432288169861,-5.158503532409668,combined
+2025-05-10 21:20:13,jawir,unknown,True,0.537761390209198,-3.7574234008789062,combined
+2025-05-10 21:23:49,aku pergi,goodbye,False,0.9648464918136597,-4.9958176612854,combined
+2025-05-10 21:23:55,ga mau,denied,False,0.9827662706375122,-5.650094509124756,combined
+2025-05-10 21:24:02,cariin buku :),cari_buku,False,0.9805168509483337,-5.461432456970215,combined
+2025-05-10 21:24:24,engga,denied,False,0.9793829321861267,-5.694575309753418,combined
+2025-05-10 21:24:36,kali ini gimana cara jadi anggota,keanggotaan,False,0.969345211982727,-5.170290470123291,combined
+2025-05-10 21:24:40,apakah gw anggota,keanggotaan,False,0.9429781436920166,-4.916390895843506,combined
