@@ -1,0 +1,50 @@
+2025-05-10 20:51:10,272 - __main__ - INFO - Created evaluation CSV file: model_evaluation.csv
+2025-05-10 20:51:10,275 - __main__ - INFO - Loading intent resources from C:\xampp\htdocs\ChatbotPerpusBipa\py\model...
+2025-05-10 20:52:12,106 - __main__ - INFO - Intent resources loaded successfully
+2025-05-10 20:52:12,108 - __main__ - INFO - Loaded 9 intent classes
+2025-05-10 20:52:12,113 - __main__ - INFO - Thresholds: {'energy_threshold': -5.720269680023193, 'msp_threshold': 0.8734092712402344}
+2025-05-10 20:52:12,114 - __main__ - INFO - Intent classification model loaded successfully!
+2025-05-10 20:52:13,087 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.9:5000
+2025-05-10 20:52:13,088 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-10 20:52:13,148 - werkzeug - INFO -  * Restarting with stat
+2025-05-10 20:52:43,569 - __main__ - INFO - Loading intent resources from C:\xampp\htdocs\ChatbotPerpusBipa\py\model...
+2025-05-10 20:53:35,798 - __main__ - INFO - Loading intent resources from C:\xampp\htdocs\ChatbotPerpusBipa\py\model...
+2025-05-10 20:53:38,986 - __main__ - INFO - Intent resources loaded successfully
+2025-05-10 20:53:38,986 - __main__ - INFO - Loaded 9 intent classes
+2025-05-10 20:53:38,986 - __main__ - INFO - Thresholds: {'energy_threshold': -5.720269680023193, 'msp_threshold': 0.8734092712402344}
+2025-05-10 20:53:38,986 - __main__ - INFO - Intent classification model loaded successfully!
+2025-05-10 20:53:39,220 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.9:5000
+2025-05-10 20:53:39,220 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-10 20:53:39,236 - werkzeug - INFO -  * Restarting with stat
+2025-05-10 20:53:49,002 - __main__ - INFO - Loading intent resources from C:\xampp\htdocs\ChatbotPerpusBipa\py\model...
+2025-05-10 21:03:09,865 - __main__ - INFO - Loading intent resources from C:\xampp\htdocs\ChatbotPerpusBipa\py\model...
+2025-05-10 21:03:13,006 - __main__ - INFO - Intent resources loaded successfully
+2025-05-10 21:03:13,006 - __main__ - INFO - Loaded 9 intent classes
+2025-05-10 21:03:13,006 - __main__ - INFO - Thresholds: {'energy_threshold': -5.720269680023193, 'msp_threshold': 0.8734092712402344}
+2025-05-10 21:03:13,006 - __main__ - INFO - Intent classification model loaded successfully!
+2025-05-10 21:03:13,037 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.9:5000
+2025-05-10 21:03:13,037 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-10 21:04:34,421 - __main__ - INFO - 
+========== INTENT PREDICTION DEBUG ==========
+2025-05-10 21:04:34,421 - __main__ - INFO - Input Text: hi
+2025-05-10 21:04:34,421 - __main__ - INFO - Detection Method: combined
+2025-05-10 21:04:43,102 - __main__ - INFO - Logits: [[-1.3176556825637817, -1.1946855783462524, -0.858184278011322, -1.1091588735580444, -1.0160118341445923, 1.3968093395233154, 5.099667072296143, -1.0186958312988281, -0.7325793504714966]]
+2025-05-10 21:04:43,618 - __main__ - INFO - Softmax Probabilities: [[0.0015701063675805926, 0.0017755558947101235, 0.0024858498945832253, 0.0019340959843248129, 0.0021229088306427, 0.023703157901763916, 0.9614725708961487, 0.0021172184497117996, 0.0028185418341308832]]
+2025-05-10 21:04:43,633 - __main__ - INFO - Max Probability (Confidence): 0.9615
+2025-05-10 21:04:43,633 - __main__ - INFO - Predicted Index: 6
+2025-05-10 21:04:44,086 - __main__ - INFO - Energy Score: -5.1390
+2025-05-10 21:04:44,086 - __main__ - INFO - OOD Detection -> is_ood: False
+2025-05-10 21:04:44,086 - __main__ - INFO - Prediction marked as IN-DISTRIBUTION.
+2025-05-10 21:04:44,086 - __main__ - INFO - Predicted Intent: greeting
+2025-05-10 21:04:44,086 - __main__ - INFO - =============================================
+
+2025-05-10 21:04:44,086 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 21:04:44] "POST /api/analyze HTTP/1.1" 200 -

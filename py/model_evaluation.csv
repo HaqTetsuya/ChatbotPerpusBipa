@@ -1,0 +1,3 @@
+timestamp,input_text,predicted_intent,is_ood,confidence,energy_score,detection_method
+2025-05-10 21:04:44,hi,greeting,False,0.9614725708961487,-5.138956069946289,combined
+2025-05-10 21:11:32,"selamat pagi, saya inginn tau cara meminjam buku boleh? makasih",cara_pinjam,False,0.9776320457458496,-5.422436714172363,combined
