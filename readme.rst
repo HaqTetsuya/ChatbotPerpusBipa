@@ -1,11 +1,14 @@
+1. Classification model
+
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/HaqTetsuya/ChatbotPerpusBipa/blob/main/IndobertPerpusChatbot.ipynb
-   :alt: train the model
+   :alt: Classification Model Training
 
+2. Book Recomendation
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/HaqTetsuya/ChatbotPerpusBipa/blob/main/BookRecomendation.ipynb
-   :alt: train the model
+   :alt: Book Recommendation Model Training
 
 
 modelnya belum jadi
@@ -56,20 +59,23 @@ Setup Instructions
 Training the Model
 ------------------
 
-Before running the chatbot, you need to train the IndoBERT model. Use the provided Colab notebook for training:
+Before running the chatbot, you need to train the IndoBERT model and book recomender model. Use the provided Colab notebook for training:
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
    :target: https://colab.research.google.com/github/HaqTetsuya/ChatbotPerpusBipa/blob/main/IndobertPerpusChatbot.ipynb
    :alt: Open in Colab
 
+.. image:: https://colab.research.google.com/assets/colab-badge.svg
+   :target: https://colab.research.google.com/github/HaqTetsuya/ChatbotPerpusBipa/blob/main/BookRecomendation.ipynb
+   :alt: train the model
+
 1. Open the Colab notebook by clicking the badge above.
 2. Follow the instructions in the notebook to train the model:
 
    - Upload your dataset.
-   - Preprocess the data.
    - Train and save the model.
 
-3. Download the trained model and place it in the appropriate directory in the project: ``/py/model/``
+3. Download the trained model and place it in the appropriate directory in the project: ``/py/``
 4. import database chatbotbipa.sql
 
 ---
