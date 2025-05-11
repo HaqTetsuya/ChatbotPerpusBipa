@@ -28,3 +28,6 @@ timestamp,input_text,predicted_intent,is_ood,confidence,energy_score,detection_m
 2025-05-10 21:59:21,aku datang besok,goodbye,False,0.935689389705658,-4.752419948577881,combined
 2025-05-10 21:59:29,aku akan tiba besok pagi,unknown,True,0.7373034358024597,-4.041408538818359,combined
 2025-05-10 22:02:09,cariin buku bang,cari_buku,False,0.9809244871139526,-5.464622974395752,combined
+2025-05-11 18:10:35,hi,greeting,False,0.9614725708961487,-5.138956069946289,combined
+2025-05-11 18:11:23,hi,greeting,False,0.9614725708961487,-5.138956069946289,combined
+2025-05-11 18:12:24,cariin buku,cari_buku,False,0.9802038669586182,-5.4514336585998535,combined

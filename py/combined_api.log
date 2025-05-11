@@ -1,0 +1,70 @@
+2025-05-11 15:32:52,561 - __main__ - INFO - Loading intent resources from C:\xampp\htdocs\ChatbotPerpusBipa\py\model...
+2025-05-11 15:33:14,705 - __main__ - INFO - Intent resources loaded successfully
+2025-05-11 15:33:14,705 - __main__ - INFO - Loaded 9 intent classes
+2025-05-11 15:33:14,705 - __main__ - INFO - Thresholds: {'energy_threshold': -5.720269680023193, 'msp_threshold': 0.8734092712402344}
+2025-05-11 15:33:14,705 - __main__ - INFO - Intent classification model loaded successfully!
+2025-05-11 15:33:14,861 - __main__ - INFO - BookRecommender initialized with model: all-minilm-l6-v2
+2025-05-11 15:33:14,939 - __main__ - INFO - Loaded configuration: model_name=all-MiniLM-L6-v2
+2025-05-11 15:33:15,064 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-05-11 15:33:15,064 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: C:\xampp\htdocs\ChatbotPerpusBipa\py\recommender_model\sentence_transformer
+2025-05-11 15:33:36,220 - __main__ - INFO - Model loaded from C:\xampp\htdocs\ChatbotPerpusBipa\py\recommender_model\sentence_transformer
+2025-05-11 15:33:36,423 - __main__ - INFO - Embeddings loaded: 9962 book vectors
+2025-05-11 15:33:36,643 - __main__ - INFO - DataFrame loaded: 9962 books
+2025-05-11 15:33:36,643 - __main__ - INFO - Book recommendation model loaded successfully!
+2025-05-11 15:33:37,018 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.9:5000
+2025-05-11 15:33:37,018 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-11 18:10:23,140 - __main__ - INFO - 
+========== INTENT PREDICTION DEBUG ==========
+2025-05-11 18:10:23,140 - __main__ - INFO - Input Text: hi
+2025-05-11 18:10:23,140 - __main__ - INFO - Detection Method: combined
+2025-05-11 18:10:34,354 - __main__ - INFO - Logits: [[-1.3176556825637817, -1.1946855783462524, -0.858184278011322, -1.1091588735580444, -1.0160118341445923, 1.3968093395233154, 5.099667072296143, -1.0186958312988281, -0.7325793504714966]]
+2025-05-11 18:10:34,791 - __main__ - INFO - Softmax Probabilities: [[0.0015701063675805926, 0.0017755558947101235, 0.0024858498945832253, 0.0019340959843248129, 0.0021229088306427, 0.023703157901763916, 0.9614725708961487, 0.0021172184497117996, 0.0028185418341308832]]
+2025-05-11 18:10:34,822 - __main__ - INFO - Max Probability (Confidence): 0.9615
+2025-05-11 18:10:34,822 - __main__ - INFO - Predicted Index: 6
+2025-05-11 18:10:35,073 - __main__ - INFO - Energy Score: -5.1390
+2025-05-11 18:10:35,104 - __main__ - INFO - OOD Detection -> is_ood: False
+2025-05-11 18:10:35,119 - __main__ - INFO - Prediction marked as IN-DISTRIBUTION.
+2025-05-11 18:10:35,119 - __main__ - INFO - Predicted Intent: greeting
+2025-05-11 18:10:35,119 - __main__ - INFO - =============================================
+
+2025-05-11 18:10:35,229 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 18:10:35] "POST /api/analyze HTTP/1.1" 200 -
+2025-05-11 18:11:23,221 - __main__ - INFO - 
+========== INTENT PREDICTION DEBUG ==========
+2025-05-11 18:11:23,236 - __main__ - INFO - Input Text: hi
+2025-05-11 18:11:23,236 - __main__ - INFO - Detection Method: combined
+2025-05-11 18:11:23,502 - __main__ - INFO - Logits: [[-1.3176556825637817, -1.1946855783462524, -0.858184278011322, -1.1091588735580444, -1.0160118341445923, 1.3968093395233154, 5.099667072296143, -1.0186958312988281, -0.7325793504714966]]
+2025-05-11 18:11:23,517 - __main__ - INFO - Softmax Probabilities: [[0.0015701063675805926, 0.0017755558947101235, 0.0024858498945832253, 0.0019340959843248129, 0.0021229088306427, 0.023703157901763916, 0.9614725708961487, 0.0021172184497117996, 0.0028185418341308832]]
+2025-05-11 18:11:23,517 - __main__ - INFO - Max Probability (Confidence): 0.9615
+2025-05-11 18:11:23,517 - __main__ - INFO - Predicted Index: 6
+2025-05-11 18:11:23,533 - __main__ - INFO - Energy Score: -5.1390
+2025-05-11 18:11:23,533 - __main__ - INFO - OOD Detection -> is_ood: False
+2025-05-11 18:11:23,549 - __main__ - INFO - Prediction marked as IN-DISTRIBUTION.
+2025-05-11 18:11:23,549 - __main__ - INFO - Predicted Intent: greeting
+2025-05-11 18:11:23,564 - __main__ - INFO - =============================================
+
+2025-05-11 18:11:23,596 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 18:11:23] "POST /api/analyze HTTP/1.1" 200 -
+2025-05-11 18:11:39,971 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 18:11:39] "[31m[1mPOST /api/analyze HTTP/1.1[0m" 400 -
+2025-05-11 18:12:23,799 - __main__ - INFO - 
+========== INTENT PREDICTION DEBUG ==========
+2025-05-11 18:12:23,814 - __main__ - INFO - Input Text: cariin buku
+2025-05-11 18:12:23,814 - __main__ - INFO - Detection Method: combined
+2025-05-11 18:12:24,377 - __main__ - INFO - Logits: [[-0.5366767644882202, 5.43143892288208, -1.0354127883911133, -0.47568440437316895, 0.249542698264122, -0.5027629733085632, -0.8352915644645691, -0.6454737782478333, -1.5767426490783691]]
+2025-05-11 18:12:24,392 - __main__ - INFO - Softmax Probabilities: [[0.002508399076759815, 0.9802038669586182, 0.0015233453596010804, 0.002666153945028782, 0.005506142973899841, 0.0025949282571673393, 0.0018608442042022943, 0.00224981433711946, 0.0008865470881573856]]
+2025-05-11 18:12:24,439 - __main__ - INFO - Max Probability (Confidence): 0.9802
+2025-05-11 18:12:24,439 - __main__ - INFO - Predicted Index: 1
+2025-05-11 18:12:24,439 - __main__ - INFO - Energy Score: -5.4514
+2025-05-11 18:12:24,455 - __main__ - INFO - OOD Detection -> is_ood: False
+2025-05-11 18:12:24,455 - __main__ - INFO - Prediction marked as IN-DISTRIBUTION.
+2025-05-11 18:12:24,455 - __main__ - INFO - Predicted Intent: cari_buku
+2025-05-11 18:12:24,455 - __main__ - INFO - =============================================
+
+2025-05-11 18:12:24,471 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 18:12:24] "POST /api/analyze HTTP/1.1" 200 -
+2025-05-11 18:19:05,734 - __main__ - INFO - Finding books similar to: 'magic fantasy adventure'
+2025-05-11 18:20:00,165 - __main__ - INFO - Successfully generated 5 recommendations
+2025-05-11 18:20:00,165 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 18:20:00] "POST /api/recommend HTTP/1.1" 200 -
+2025-05-11 18:21:06,927 - __main__ - INFO - Finding books similar to: 'programming for begginers'
+2025-05-11 18:21:08,069 - __main__ - INFO - Successfully generated 10 recommendations
+2025-05-11 18:21:08,101 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 18:21:08] "POST /api/recommend HTTP/1.1" 200 -

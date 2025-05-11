@@ -562,3 +562,10 @@ if __name__ == '__main__':
     
     # For development use debug=True, for production use debug=False
     app.run(host='0.0.0.0', port=port, debug=False, use_reloader=False)
+	
+	
+	
+#curl -X POST http://localhost:5000/api/analyze \
+     -H "Content-Type: application/json" \
+     -d '{"text": "cariin buku", "method": "combined"}'
+	
