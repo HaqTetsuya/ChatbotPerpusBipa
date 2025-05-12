@@ -114,7 +114,8 @@ class chat extends CI_Controller
 
 		$api_data = [
 			'query' => $message,
-			'top_n' => 5
+			'top_n' => 10,
+			'threshold' => 0.4
 		];
 
 		$ch = curl_init('http://localhost:5000/api/recommend'); // perhatikan endpoint-nya
@@ -150,9 +151,10 @@ class chat extends CI_Controller
 		}
 
 		// Kalau sukses walaupun recommendations kosong, tetap lanjut
-		$recommendations = $api_response['recommendations'] ?? [];
+		$high = $api_response['high_recommendations'] ?? [];
+		$low = $api_response['low_recommendations'] ?? [];
 
-		$formatted_response = $this->format_recommendations($recommendations);
+		$formatted_response = $this->format_recommendations($high, $low);
 
 		$data = [
 			'user' => $user_id,
@@ -169,27 +171,48 @@ class chat extends CI_Controller
     /**
      * Format book recommendations into HTML for display
      */
-    private function format_recommendations($results) {
-        $output = "<strong>Buku yang direkomendasikan untuk Anda:</strong><br><br>";
-        
-        foreach ($results as $index => $book) {
-            $relevance_percentage = $book['relevance_score'] * 100;
-            $year = $book['year'] ? $book['year'] : 'Tahun tidak diketahui';
-            
-            $output .= "<div class='book-recommendation'>";
-            $output .= "<strong>" . ($index + 1) . ". " . htmlspecialchars($book['title']) . "</strong><br>";
-            $output .= "Penulis: " . htmlspecialchars($book['author']) . "<br>";
-            $output .= "Kategori: " . htmlspecialchars($book['category']) . "<br>";
-            $output .= "Tahun: " . htmlspecialchars($year) . "<br>";
-            $output .= "<p><em>Deskripsi:</em> " . nl2br(htmlspecialchars($book['description'])) . "</p>";
-            $output .= "Relevansi: " . number_format($relevance_percentage, 0) . "%<br>";
-            $output .= "</div><br>";
-        }
-        
-        $output .= "<p>Apakah Anda ingin rekomendasi buku lainnya? Silakan ketik pertanyaan atau topik yang Anda minati.</p>";
-        
-        return $output;
-    }
+    private function format_recommendations($high, $low) {
+		$output = "<strong>Buku yang paling relevan untuk Anda:</strong><br><br>";
+
+		foreach ($high as $index => $book) {
+			$relevance_percentage = $book['relevance_score'] * 100;
+			$year = $book['year'] ? $book['year'] : 'Tahun tidak diketahui';
+			
+			$output .= "<div class='book-recommendation'>";
+			$output .= "<strong>" . ($index + 1) . ". " . htmlspecialchars($book['title']) . "</strong><br>";
+			$output .= "Penulis: " . htmlspecialchars($book['author']) . "<br>";
+			$output .= "Kategori: " . htmlspecialchars($book['category']) . "<br>";
+			$output .= "Tahun: " . htmlspecialchars($year) . "<br>";
+			$output .= "<p><em>Deskripsi:</em> " . nl2br(htmlspecialchars($book['description'])) . "</p>";
+			$output .= "Relevansi: " . number_format($relevance_percentage, 0) . "%<br>";
+			$output .= "</div><br>";
+		}
+
+		if (!empty($low)) {
+			$output .= "<details><summary>📚 Lihat rekomendasi tambahan</summary><br>";
+
+			foreach ($low as $index => $book) {
+				$relevance_percentage = $book['relevance_score'] * 100;
+				$year = $book['year'] ? $book['year'] : 'Tahun tidak diketahui';
+
+				$output .= "<div class='book-recommendation'>";
+				$output .= "<strong>" . ($index + 1 + count($high)) . ". " . htmlspecialchars($book['title']) . "</strong><br>";
+				$output .= "Penulis: " . htmlspecialchars($book['author']) . "<br>";
+				$output .= "Kategori: " . htmlspecialchars($book['category']) . "<br>";
+				$output .= "Tahun: " . htmlspecialchars($year) . "<br>";
+				$output .= "<p><em>Deskripsi:</em> " . nl2br(htmlspecialchars($book['description'])) . "</p>";
+				$output .= "Relevansi: " . number_format($relevance_percentage, 0) . "%<br>";
+				$output .= "</div><br>";
+			}
+
+			$output .= "</details>";
+		}
+
+		$output .= "<p>Apakah Anda ingin rekomendasi buku lainnya? Silakan ketik pertanyaan atau topik yang Anda minati.</p>";
+		
+		return $output;
+	}
+
     
     public function clear()
     {
