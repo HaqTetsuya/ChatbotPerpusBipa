@@ -565,7 +565,7 @@ if __name__ == '__main__':
 	
 	
 	
-#curl -X POST http://localhost:5000/api/analyze \
-     -H "Content-Type: application/json" \
-     -d '{"text": "cariin buku", "method": "combined"}'
+#curl -X POST http://localhost:5000/api/analyze \-H "Content-Type: application/json" \-d '{"text": "cariin buku", "method": "combined"}'
+	
+#curl -X POST http://localhost:5000/api/recommend \-H "Content-Type: application/json" \-d '{"query": "programming for begginers","top_n": 10,"include_description": true}'		 
 	
