@@ -504,6 +504,7 @@ def recommend():
     query = data.get('query')
     top_n = data.get('top_n', 5)
     include_description = data.get('include_description', True)
+    threshold = data.get('threshold', 0.5)  # default threshold
 
     if not query:
         return jsonify({
@@ -536,10 +537,18 @@ def recommend():
 
         recommendations_clean = clean_np(recommendations)
 
+        # Split based on threshold
+        high_score = [rec for rec in recommendations_clean if rec['relevance_score'] >= threshold]
+        low_score = [rec for rec in recommendations_clean if rec['relevance_score'] < threshold]
+
         return jsonify({
             "query": query,
-            "recommendations": recommendations_clean,
-            "count": len(recommendations_clean)
+            "threshold": threshold,
+            "high_recommendations": high_score,
+            "low_recommendations": low_score,
+            "total_count": len(recommendations_clean),
+            "high_count": len(high_score),
+            "low_count": len(low_score)
         })
 
     except Exception as e:
