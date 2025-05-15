@@ -35,7 +35,8 @@ if (!function_exists('get_bot_response')) {
                         '<li>Melampirkan fotokopi KTP/KTM</li>' .
                         '<li>Menyerahkan 2 lembar pas foto 3x4</li>' .
                         '</ol>' .
-                        '<p>Setelah data diverifikasi, kartu anggota akan dikirimkan via email/diambil langsung. Kartu ini memungkinkan Anda meminjam buku fisik dan mengakses koleksi digital.</p>'
+                        '<p>Setelah data diverifikasi, kartu anggota akan dikirimkan via email/diambil langsung. Kartu ini memungkinkan Anda meminjam buku fisik dan mengakses koleksi digital.</p>'.
+						'<p>Bagi mahasiswa dari luar STMIK BINA PATRIA MAGELANG diperbolehkan memanfaatkan fasilitas perpustakaan, kecuali peminjaman buku. Syarat untuk memanfaatkan fasilitas adalah dengan menunjukkan kartu mahasiswa yang masih berlaku.</p>'			
                 ];
 			
 			case 'fasilitas':
@@ -48,6 +49,7 @@ if (!function_exists('get_bot_response')) {
 						'<li>Penelusuran literatur</li>'.
 						'<li>Fotokopi koleksi</li>'.
 						'<li>Ruang baca</li>'.
+						'<li>Internet Gratis</li>'.
 						'<li>Locker tas/jaket</li>'.
 						'</ol>' .
 						'<p>Bagi mahasiswa dari luar STMIK BINA PATRIA MAGELANG diperbolehkan memanfaatkan fasilitas perpustakaan, kecuali peminjaman buku. Syarat untuk memanfaatkan fasilitas adalah dengan menunjukkan kartu mahasiswa yang masih berlaku.</p>'			

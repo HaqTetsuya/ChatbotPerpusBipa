@@ -69,3 +69,21 @@ timestamp,input_text,predicted_intent,is_ood,confidence,energy_score,detection_m
 2025-05-15 11:19:54,cariin buku bang,cari_buku,False,0.9809244871139526,-5.464622974395752,combined
 2025-05-15 11:21:01,yes,confirm,False,0.9768011569976807,-5.351689338684082,combined
 2025-05-15 11:21:51,iya bang,confirm,False,0.9753417372703552,-5.4731950759887695,combined
+2025-05-15 13:31:36,"permisi, bagaimana cara meminjam buku di perpus ini?",cara_pinjam,False,0.9802507758140564,-5.518075466156006,combined
+2025-05-15 13:31:52,apa boleh pinjam lebih dari satu buku?,cara_pinjam,False,0.9832726716995239,-5.586790084838867,combined
+2025-05-15 13:32:02,kapan pengembalian terakhirnya?,cara_pinjam,False,0.8870254755020142,-4.359071731567383,combined
+2025-05-15 13:34:26,apakah mahasiswa kampus lain boleh meminjam,keanggotaan,False,0.9542529582977295,-4.95709228515625,combined
+2025-05-15 13:36:40,apa boleh pinjam lebih dari satu buku?,cara_pinjam,False,0.9832726716995239,-5.586790084838867,combined
+2025-05-15 13:37:23,cara mendaftar,keanggotaan,False,0.9736524820327759,-5.240965366363525,combined
+2025-05-15 13:37:43,"selamat siang, bagaimana cara agar boleh meminjam buku di perpus bipa? terimakasih",cara_pinjam,False,0.9790152311325073,-5.468979835510254,combined
+2025-05-15 13:37:52,apa syarat meminjam buku?,cara_pinjam,False,0.9814876317977905,-5.49693489074707,combined
+2025-05-15 13:39:02,adakah ruang baca?,fasilitas,False,0.9779654145240784,-5.254983425140381,combined
+2025-05-15 13:39:30,"misi bang, di perpus bipa ada apa aja?",fasilitas,False,0.9651735424995422,-5.211268424987793,combined
+2025-05-15 13:39:41,boleh minta wifi gratis ga?,fasilitas,False,0.9843688011169434,-5.517881870269775,combined
+2025-05-15 13:42:13,assalamualaikum bang besok hari rabu tutup atau buka?,jam_layanan,False,0.9817672371864319,-5.473223686218262,combined
+2025-05-15 13:43:15,carikan buku berdasarkan deskripsi saya,cari_buku,False,0.9782375693321228,-5.451609134674072,combined
+2025-05-15 13:44:16,history of indonesia,unknown,True,0.4240405559539795,-2.7078945636749268,combined
+2025-05-15 13:44:32,"permisi, bang bisa bantu cari buku",cari_buku,False,0.974775493144989,-5.348278999328613,combined
+2025-05-15 13:44:53,iya,confirm,False,0.9762176275253296,-5.4991021156311035,combined
+2025-05-15 13:45:54,"general, fiction, romance, teens",unknown,True,0.7372574210166931,-3.16290283203125,combined
+2025-05-15 13:46:04,cari buku,cari_buku,False,0.9800227880477905,-5.468532562255859,combined

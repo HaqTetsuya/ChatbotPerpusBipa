@@ -1,0 +1,37 @@
+1. Salam Pembuka:
+	Halo
+	Selamat siang
+	Tolong bantu saya
+	Assalammualaikum, apakah ini berfungsi
+2. Goodbye Terimakasih:
+	Terimakasih atas bantuanya
+	sampai jumpa
+	oke selamat sore
+	besok lagi ya
+3. Keanggotaan: (ketentuan keanggotaan perpus bipa)
+	bagaimana cara menjadi anggota perpus bipa?
+	apakah mahasiswa kampus lain boleh meminjam
+	cara mendaftar
+4. Cara Pinjam buku: (menjelaskan semua proses peminjaman sampai pengembalian buku)
+	permisi, bagaimana cara meminjam buku di perpus ini?
+	apa boleh pinjam lebih dari satu buku?
+	kapan pengembalian terakhirnya?
+5. fasilitas: (info beberapa fasilitas yanga ada di perpus)
+	misi bang, di perpus bipa ada apa aja?
+	boleh minta wifi gratis ga?
+	adakah ruang baca?
+6. jam layanan: (keterangan hari dan jam buka dan tutup)
+	apakah hari ini buka?
+	jam berapa tutupnya?
+	assalamualaikum bang besok hari rabu tutup atau buka?
+7. cari buku: (pencarian buku, setelah itu masukan deskripsi dan kaa kunci buku yang dicari)
+	tolong carikan buku
+	permisi, bang bisa bantu cari buku
+	carikan buku berdasarkan deskripsi saya
+	(setelah itu masukan kaca kunci, saat ini hanya bisa berbahasa inggris)
+	python programming
+	history, religion, myth
+	general, fiction, romance, teens
+	(setelah itu dapat menggunakan lagi dengan mengetik iya, atau kalimat konfirmasi lain)
+	
+	
