@@ -87,3 +87,16 @@ timestamp,input_text,predicted_intent,is_ood,confidence,energy_score,detection_m
 2025-05-15 13:44:53,iya,confirm,False,0.9762176275253296,-5.4991021156311035,combined
 2025-05-15 13:45:54,"general, fiction, romance, teens",unknown,True,0.7372574210166931,-3.16290283203125,combined
 2025-05-15 13:46:04,cari buku,cari_buku,False,0.9800227880477905,-5.468532562255859,combined
+2025-05-15 13:58:30,Selamat pagi Perpus Bina Patria,unknown,True,0.4279376268386841,-3.3733272552490234,combined
+2025-05-15 13:58:49,selamat pagi,greeting,False,0.9735785722732544,-5.200009822845459,combined
+2025-05-15 13:59:05,assalamualaikum wr wb,greeting,False,0.956558346748352,-5.079347133636475,combined
+2025-05-15 13:59:38,Terima kasih atas informasinya,goodbye,False,0.965297281742096,-5.174276828765869,combined
+2025-05-15 14:00:29,Mau tanya cara daftar anggota bagaimana ya,keanggotaan,False,0.9641819000244141,-5.187028884887695,combined
+2025-05-15 14:01:19,cara memimjam buku bagaimana ya kak,cara_pinjam,False,0.9693710207939148,-5.377469539642334,combined
+2025-05-15 14:03:59,fasilitas perpus apa saja ya ,fasilitas,False,0.9769613146781921,-5.212873935699463,combined
+2025-05-15 14:05:03,hari apa saja buka layanannya,jam_layanan,False,0.9811816811561584,-5.466010093688965,combined
+2025-05-15 14:07:05,carikan buku ,cari_buku,False,0.9800527691841125,-5.45190954208374,combined
+2025-05-15 14:07:26,python,unknown,True,0.8364458084106445,-3.81532883644104,combined
+2025-05-15 14:07:33,cari buku,cari_buku,False,0.9800227880477905,-5.468532562255859,combined
+2025-05-15 14:08:20,boleh,confirm,False,0.9768286943435669,-5.391432762145996,combined
+2025-05-15 14:08:47,yes,confirm,False,0.9768011569976807,-5.351689338684082,combined
