@@ -65,3 +65,7 @@ timestamp,input_text,predicted_intent,is_ood,confidence,energy_score,detection_m
 2025-05-12 10:48:06,cari buku kocak,cari_buku,False,0.9799063801765442,-5.450490951538086,combined
 2025-05-12 10:48:23,ya ya ya,confirm,False,0.97066730260849,-5.20153284072876,combined
 2025-05-12 10:48:42,tidaq,denied,False,0.973061203956604,-5.60878849029541,combined
+2025-05-15 11:19:45,halo,greeting,False,0.961541473865509,-5.164900779724121,combined
+2025-05-15 11:19:54,cariin buku bang,cari_buku,False,0.9809244871139526,-5.464622974395752,combined
+2025-05-15 11:21:01,yes,confirm,False,0.9768011569976807,-5.351689338684082,combined
+2025-05-15 11:21:51,iya bang,confirm,False,0.9753417372703552,-5.4731950759887695,combined
