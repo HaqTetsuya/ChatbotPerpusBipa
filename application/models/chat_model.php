@@ -13,10 +13,11 @@ class Chat_model extends CI_Model
         return $this->db->get($table)->result_array(); // Ambil chat history dari tabel yang sesuai
     }
 
-    public function clearChatHistory($table)
-    {
-        return $this->db->empty_table($table); // Hapus semua data dari tabel yang sesuai
-    }
+    public function clearChatHistory($table, $userId)
+	{
+		return $this->db->where('user_id', $userId)->delete($table);
+	}
+	
     public function getChatHistoryByUser($table, $user_id)
     {
         $this->db->where('user', $user_id);

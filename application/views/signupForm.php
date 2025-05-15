@@ -117,75 +117,7 @@
             });
         });
     </script>
-    <script>
-	/*
-        $(document).ready(function() {
-            // Show/hide password
-            $('#toggle-password').click(function() {
-                const passwordInput = $('#password');
-                const icon = $(this).find('i');
-                const isHidden = passwordInput.attr('type') === 'password';
-                passwordInput.attr('type', isHidden ? 'text' : 'password');
-                icon.toggleClass('fa-eye fa-eye-slash');
-            });
 
-            $('#toggle-confirm-password').click(function() {
-                const passwordInput = $('#confirm-password');
-                const icon = $(this).find('i');
-                const isHidden = passwordInput.attr('type') === 'password';
-                passwordInput.attr('type', isHidden ? 'text' : 'password');
-                icon.toggleClass('fa-eye fa-eye-slash');
-            });
-
-            // Form validation
-            $("#signup-form").validate({
-                rules: {
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    nama: {
-                        required: true,
-                        minlength: 3
-                    },
-                    password: {
-                        required: true,
-                        minlength: 6
-                    },
-                    confirm_password: {
-                        required: true,
-                        equalTo: "#password"
-                    }
-                },
-                messages: {
-                    email: {
-                        required: "Please enter your email.",
-                        email: "Please enter a valid email address."
-                    },
-                    nama: {
-                        required: "Please enter your name.",
-                        minlength: "Name must be at least 3 characters long."
-                    },
-                    password: {
-                        required: "Please provide a password.",
-                        minlength: "Password must be at least 6 characters long."
-                    },
-                    confirm_password: {
-                        required: "Please confirm your password.",
-                        equalTo: "Passwords do not match."
-                    }
-                },
-                errorElement: "div",
-                errorClass: "text-red-600 text-sm mt-1",
-                highlight: function(element) {
-                    $(element).addClass("border-red-500");
-                },
-                unhighlight: function(element) {
-                    $(element).removeClass("border-red-500");
-                }
-            });
-        });*/
-    </script>
 </body>
 
 </html>

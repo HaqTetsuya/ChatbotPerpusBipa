@@ -215,8 +215,10 @@ class chat extends CI_Controller
 
     
     public function clear()
-    {
-        $this->chatModel->clearChatHistory('chats');
-        redirect('chat'); // redirect back to chat page
-    }
+	{
+		$userId = $this->session->userdata('id'); // or adjust if your session key is different
+		$this->chatModel->clearChatHistory('chats', $userId);
+		redirect('chat');
+	}
+
 }
