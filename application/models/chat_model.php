@@ -15,7 +15,7 @@ class Chat_model extends CI_Model
 
     public function clearChatHistory($table, $userId)
 	{
-		return $this->db->where('user_id', $userId)->delete($table);
+		return $this->db->where('user', $userId)->delete($table);
 	}
 	
     public function getChatHistoryByUser($table, $user_id)

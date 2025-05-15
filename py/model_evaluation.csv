@@ -100,3 +100,20 @@ timestamp,input_text,predicted_intent,is_ood,confidence,energy_score,detection_m
 2025-05-15 14:07:33,cari buku,cari_buku,False,0.9800227880477905,-5.468532562255859,combined
 2025-05-15 14:08:20,boleh,confirm,False,0.9768286943435669,-5.391432762145996,combined
 2025-05-15 14:08:47,yes,confirm,False,0.9768011569976807,-5.351689338684082,combined
+2025-05-16 00:04:59,Saya ingin mencari buku,cari_buku,False,0.9809097647666931,-5.513920783996582,combined
+2025-05-16 00:05:45,iya,confirm,False,0.9762176275253296,-5.4991021156311035,combined
+2025-05-16 00:06:42,apa saja fasilitas di perpustakaan ini?,fasilitas,False,0.9842522740364075,-5.502963542938232,combined
+2025-05-16 00:09:05,halo selamat pagi,greeting,False,0.973768413066864,-5.271995544433594,combined
+2025-05-16 00:10:20,halo selamat pagi,greeting,False,0.973768413066864,-5.271995544433594,combined
+2025-05-16 00:10:36,assalamualaikum wr wb,greeting,False,0.956558346748352,-5.079347133636475,combined
+2025-05-16 00:11:12,Terima kasih atas informasinya,goodbye,False,0.965297281742096,-5.174276828765869,combined
+2025-05-16 00:11:35,aku pergi,goodbye,False,0.9648464918136597,-4.9958176612854,combined
+2025-05-16 00:11:57,Mau tanya cara daftar anggota bagaimana ya,keanggotaan,False,0.9641819000244141,-5.187028884887695,combined
+2025-05-16 00:13:21,cara memimjam buku bagaimana ya kak,cara_pinjam,False,0.9693710207939148,-5.377469539642334,combined
+2025-05-16 00:14:08,fasilitas perpus apa saja ya,fasilitas,False,0.9769613146781921,-5.212873935699463,combined
+2025-05-16 00:14:37,hari apa saja buka layanannya,jam_layanan,False,0.9811816811561584,-5.466010093688965,combined
+2025-05-16 00:14:51,carikan buku ,cari_buku,False,0.9800527691841125,-5.45190954208374,combined
+2025-05-16 00:15:59,boleh,confirm,False,0.9768286943435669,-5.391432762145996,combined
+2025-05-16 00:16:25,ya,confirm,False,0.9717757105827332,-5.386950969696045,combined
+2025-05-16 00:17:16,enggak kok bang,denied,False,0.9806344509124756,-5.7324910163879395,combined
+2025-05-16 00:17:31,terimakasih aku pergi,goodbye,False,0.9756609797477722,-5.29248046875,combined
