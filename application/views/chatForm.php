@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="<?php echo base_url(); ?>assets/css/main.css" rel="stylesheet">
-    
-   
+
+
 </head>
+
 <body class="h-screen flex items-center justify-center p-4">
     <div class="chat-wrapper bg-white w-full max-w-4xl rounded-xl shadow-lg p-6 flex flex-col h-full border-2 border-black">
         <!-- Header with profile and controls -->
@@ -23,8 +25,8 @@
                 </div>
                 <h1 class="text-2xl font-bold handwriting">BookChat</h1>
             </div>
-            
-            <div class="flex items-center space-x-4">                               
+
+            <div class="flex items-center space-x-4">
                 <!-- Profile dropdown -->
                 <div class="profile-dropdown">
                     <button class="bg-white border-2 border-black rounded-full p-2 hover:bg-gray-100 transition-colors">
@@ -36,9 +38,9 @@
                             <p class="text-sm"><?= $user->email; ?></p>
                             <p class="text-xs text-gray-500">ID: <?= $user->id; ?></p>
                         </div>
-						<a href="<?php echo site_url($active_controller.'/clear'); ?>" onclick="return confirm('Yakin ingin menghapus semua riwayat chat Anda?')" class="flex items-center px-4 py-2 hover:bg-gray-100">
-							<i class="fas fa-trash mr-2"></i> Hapus Riwayat
-						</a>
+                        <a href="<?php echo site_url($active_controller . '/clear'); ?>" onclick="return confirm('Yakin ingin menghapus semua riwayat chat Anda?')" class="flex items-center px-4 py-2 hover:bg-gray-100">
+                            <i class="fas fa-trash mr-2"></i> Hapus Riwayat
+                        </a>
                         <a href="<?php echo site_url('auth/logout'); ?>" class="flex items-center px-4 py-2 hover:bg-gray-100 rounded-b-lg">
                             <i class="fas fa-sign-out-alt mr-2"></i> Logout
                         </a>
@@ -46,7 +48,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Chat container -->
         <div class="flex flex-col space-y-4 flex-grow overflow-y-auto bg-white/80 p-4 rounded-lg" id="chat-container">
             <!-- Welcome message -->
@@ -60,24 +62,20 @@
                     <div class="timestamp">Hari ini, <?php echo date('H:i'); ?></div>
                 </div>
             </div>
-            
-            <?php if(empty($chats)): ?>
-            <!-- Chat suggestions only shown when no chat history -->
-            <div class="flex flex-col space-y-3 mt-4 ml-12">
-                <div class="chat-suggestion bg-white/90 p-3 rounded-lg border-2 border-black max-w-[80%] hover:bg-gray-50">
-                    <p class="handwriting">halo selamat pagi</p>
+
+            <?php if (empty($chats)): ?>
+                <!-- Chat suggestions only shown when no chat history -->
+                <div class="flex flex-col space-y-3 mt-4 ml-12 items-end">
+                    <h2>Contoh untuk memulai</h2>
+                    <?php foreach ($suggestions as $text): ?>
+                        <div class="chat-suggestion bg-white/90 p-3 rounded-lg border-2 border-black max-w-[80%] hover:bg-gray-50">
+                            <p class="handwriting"><?= htmlspecialchars($text) ?></p>
+                        </div>
+                    <?php endforeach; ?>
                 </div>
-                
-                <div class="chat-suggestion bg-white/90 p-3 rounded-lg border-2 border-black max-w-[80%] hover:bg-gray-50">
-                    <p class="handwriting">Saya ingin mencari buku</p>
-                </div>
-                
-                <div class="chat-suggestion bg-white/90 p-3 rounded-lg border-2 border-black max-w-[80%] hover:bg-gray-50">
-                    <p class="handwriting">apa saja fasilitas di perpustakaan ini?</p>
-                </div>
-            </div>
             <?php endif; ?>
-            
+
+
             <?php foreach ($chats as $chat): ?>
                 <div class="flex items-end justify-end space-x-3 message-container">
                     <div class="bg-white p-4 rounded-lg border-2 border-black message-bubble max-w-[80%]">
@@ -101,7 +99,7 @@
                 </div>
             <?php endforeach; ?>
         </div>
-        
+
         <!-- Input form -->
         <div class="mt-5 border-t-2 border-gray-200 pt-4">
             <form id="chat-form" class="flex items-center space-x-3">
@@ -117,7 +115,8 @@
     <script>
         const baseUrl = "<?= base_url() ?>";
         const userName = <?= json_encode($user->nama); ?>;
-        var activeController = "<?php echo $active_controller; ?>";                       
+        var activeController = "<?php echo $active_controller; ?>";
     </script>
 </body>
+
 </html>
