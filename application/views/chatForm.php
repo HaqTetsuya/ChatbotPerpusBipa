@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="<?php echo base_url(); ?>assets/css/main.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url(); ?>assets/img/favicon-32x32.png">
 
 
 </head>
@@ -20,10 +21,10 @@
         <!-- Header with profile and controls -->
         <div class="flex justify-between items-center mb-6 pb-3 border-b-2 border-gray-200">
             <div class="flex items-center">
-                <div class="w-10 h-10 border-2 border-black rounded-full mr-3 flex items-center justify-center">
-                    <i class="fas fa-book-open"></i>
+                <div class="w-10 h-10 rounded-full mr-3 flex items-center justify-center">
+                    <img src="<?php echo base_url(); ?>assets/img/logo.jpg" alt="" srcset="">
                 </div>
-                <h1 class="text-2xl font-bold handwriting">BookChat</h1>
+                <h1 class="text-2xl font-bold handwriting">Perpus Bina Patria</h1>
             </div>
 
             <div class="flex items-center space-x-4">
@@ -57,7 +58,7 @@
                     <i class="fas fa-book"></i>
                 </div>
                 <div class="bg-white p-4 rounded-lg border-2 border-black message-bubble max-w-[80%]">
-                    <p class="font-bold handwriting text-lg">BookChat</p>
+                    <p class="font-bold handwriting text-lg">Perpus Bina Patria</p>
                     <p>Halo <?= $user->nama; ?>, Ada yang bisa saya bantu dengan rekomendasikan buku?</p>
                     <div class="timestamp">Hari ini, <?php echo date('H:i'); ?></div>
                 </div>
@@ -92,7 +93,7 @@
                         <i class="fas fa-book"></i>
                     </div>
                     <div class="bg-white p-4 rounded-lg border-2 border-black message-bubble max-w-[80%]">
-                        <p class="font-bold handwriting text-lg">BookChat</p>
+                        <p class="font-bold handwriting text-lg">Perpus Bina Patria</p>
                         <p><?= $chat['bot_response'] ?></p>
                         <div class="timestamp"><?= $chat['timestamp'] ?></div>
                     </div>

@@ -58,7 +58,7 @@ $(document).ready(function () {
                     <i class="fas fa-book"></i>
                 </div>
                 <div class="bg-white p-4 rounded-lg border-2 border-black max-w-[80%]">
-                    <p class="font-bold handwriting text-lg">BookChat</p>
+                    <p class="font-bold handwriting text-lg">Perpus Bina Patria</p>
                     <p>Mengetik<span class="typing-dots">...</span></p>
                 </div>
             </div>
@@ -85,7 +85,7 @@ $(document).ready(function () {
                                 <i class="fas fa-book"></i>
                             </div>
                             <div class="bg-white p-4 rounded-lg border-2 border-black message-bubble max-w-[80%]">
-                                <p class="font-bold handwriting text-lg">BookChat</p>
+                                <p class="font-bold handwriting text-lg">Perpus Bina Patria</p>
                                 <div>${response.response}</div>
                                 <div class="timestamp">${timestamp}</div>
                             </div>
@@ -121,7 +121,7 @@ $(document).ready(function () {
                                 <i class="fas fa-book"></i>
                             </div>
                             <div class="bg-white p-4 rounded-lg border-2 border-black message-bubble max-w-[80%]">
-                                <p class="font-bold handwriting text-lg">BookChat</p>
+                                <p class="font-bold handwriting text-lg">Perpus Bina Patria</p>
                                 <div>${serverResponse}</div>
                                 <div class="timestamp">${timestamp}</div>
                             </div>
@@ -152,7 +152,7 @@ $(document).ready(function () {
                             <i class="fas fa-book"></i>
                         </div>
                         <div class="bg-white p-4 rounded-lg border-2 border-black message-bubble max-w-[80%]">
-                            <p class="font-bold handwriting text-lg">BookChat</p>
+                            <p class="font-bold handwriting text-lg">Perpus Bina Patria</p>
                             <div>${response.response}</div>
                             <div class="timestamp">${timestamp}</div>
                         </div>
@@ -191,7 +191,7 @@ $(document).ready(function () {
                             <i class="fas fa-book"></i>
                         </div>
                         <div class="bg-white p-4 rounded-lg border-2 border-black message-bubble max-w-[80%]">
-                            <p class="font-bold handwriting text-lg">BookChat</p>
+                            <p class="font-bold handwriting text-lg">Perpus Bina Patria</p>
                             <p>Maaf, terjadi kesalahan. Silakan coba lagi.</p>
                             <div class="timestamp">${timestamp}</div>
                         </div>
