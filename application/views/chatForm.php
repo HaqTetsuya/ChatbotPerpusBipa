@@ -3,72 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat Interface</title>
+    <title>Perpus Bipa</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="<?php echo base_url(); ?>assets/css/main.css" rel="stylesheet">
     
-    <style>
-        body {
-            font-family: 'Crimson Text', serif;
-            background-color: #f5f5f0;
-            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1h98v98H1V1zm1 1v96h96V2H2z' fill='%23e0e0e0' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
-        }
-        
-        .chat-wrapper {
-            box-shadow: 8px 8px 0 rgba(0,0,0,0.2);
-            position: relative;
-        }
-        
-        /* Page curl effect */
-        .chat-wrapper:after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 30px;
-            height: 30px;
-            background: linear-gradient(135deg, transparent 50%, #e0e0e0 50%);
-            border-radius: 0 0 5px 0;
-        }
-        
-        .message-bubble {
-            transition: all 0.2s ease;
-        }
-        
-        .message-bubble:hover {
-            transform: translateY(-2px);
-            box-shadow: 3px 3px 0 rgba(0,0,0,0.1);
-        }
-        
-        .timestamp {
-            font-family: 'Caveat', cursive;
-            font-size: 0.8rem;
-            color: #888;
-            margin-top: 0.5rem;
-        }
-        
-        #message::placeholder {
-            font-style: italic;
-            color: #aaa;
-        }
-        
-        .handwriting {
-            font-family: 'Caveat', cursive;
-        }
-        
-        .chat-suggestion {
-            transition: all 0.2s ease;
-            cursor: pointer;
-        }
-        
-        .chat-suggestion:hover {
-            transform: translateY(-3px);
-            box-shadow: 3px 3px 0 rgba(0,0,0,0.2);
-        }
-    </style>
+   
 </head>
 <body class="h-screen flex items-center justify-center p-4">
     <div class="chat-wrapper bg-white w-full max-w-4xl rounded-xl shadow-lg p-6 flex flex-col h-full border-2 border-black">
