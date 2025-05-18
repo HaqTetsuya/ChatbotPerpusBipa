@@ -133,10 +133,8 @@
             "user"
         ],
         "daftar": [
-            "registrasi",
-            "pendaftaran",
-            "gabung",
-            "ikut"
+            "list",
+            "daftarin"
         ],
         "bergabung": [
             "join",
@@ -198,6 +196,22 @@
             "prosedur",
             "aturan",
             "caranya"
+        ],
+        "peraturan": [
+            "rules",
+            "aturan",
+            "tata tertib",
+            "regulasi"
+        ],
+        "kebijakan": [
+            "policy",
+            "tata tertib"
+        ],
+        "list": [
+            "spill",
+            "show",
+            "tampilin",
+            "beri daftar"
         ]
     },
     "common_slang": {
@@ -217,7 +231,10 @@
         "mengapa": "kenapa",
         "selamat": "selamet",
         "dengan": "dgn",
-        "sangat": "banget"
+        "sangat": "banget",
+        "min": "mint",
+        "nigga": "nigger",
+        "woy": "woigh"
     },
     "intent_slang": {
         "jam_layanan": {
@@ -426,6 +443,13 @@
             "ngembaliin": "balikin",
             "kembali": "balikin",
             "pengembalian": "balikin"
+        },
+        "peraturan": {
+            "peraturan": "aturan",
+            "daftar": "list",
+            "info": "infokan",
+            "berlaku": "diterapkan",
+            "disini": "di bipa"
         }
     },
     "phonetic_dict": {
@@ -980,10 +1004,12 @@
         ],
         "perpustakaan": [
             "perpus",
+            "prpus",
+            "perpuz",
+            "perpuss",
             "library",
-            "lib",
-            "pustaka",
-            "perpust"
+            "libry",
+            "lib"
         ],
         "pengembalian": [
             "balikin",
@@ -1011,10 +1037,11 @@
             "pick up"
         ],
         "aturan": [
-            "rule",
-            "peraturan",
+            "aturan",
+            "aturanx",
             "aturan2",
-            "aturan-aturan"
+            "athuran",
+            "atruran"
         ],
         "prosedur": [
             "prosedurnya",
@@ -1036,6 +1063,63 @@
             "system",
             "sisem",
             "systm"
+        ],
+        "peraturan": [
+            "peratu",
+            "praturan",
+            "peratran",
+            "praturan",
+            "rule",
+            "rules",
+            "ruls",
+            "rulles",
+            "aturan",
+            "aturanx",
+            "atran",
+            "tata tertib",
+            "tatib",
+            "tatatertib",
+            "tatibnya",
+            "tatibx"
+        ],
+        "kebijakan": [
+            "kbijakan",
+            "kebijakn",
+            "kebijak",
+            "kbjkn",
+            "policy",
+            "polisi"
+        ],
+        "ketentuan": [
+            "ketntuan",
+            "ketentu",
+            "ktntuan",
+            "ketnt",
+            "keten2an"
+        ],
+        "tatatertib": [
+            "tatib",
+            "tatib2",
+            "tartib",
+            "tata2tertib",
+            "taatertib"
+        ],
+        "daftar": [
+            "dftar",
+            "daftaar",
+            "list",
+            "lists",
+            "lis",
+            "liss",
+            "daftr"
+        ],
+        "berlaku": [
+            "berlak",
+            "berlakuu",
+            "berlakux",
+            "aktif",
+            "jalan",
+            "dijalankan"
         ]
     },
     "protected_intent_words": {
@@ -1079,6 +1163,10 @@
             "bina patria"
         ],
         "cara_pinjam": [
+            "bipa",
+            "bina patria"
+        ],
+        "peraturan": [
             "bipa",
             "bina patria"
         ]
